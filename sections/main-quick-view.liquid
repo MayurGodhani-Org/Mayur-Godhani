@@ -85,6 +85,16 @@
           {%- endfor -%}
         </quick-variant-selects>
       {%- endunless -%}
+
+      <div class="quick-view__form-buttons">
+        <button 
+          type="submit"
+          class="quick-view__form-addcart button button--with-arrow"
+        >
+          <span class="text">{{ 'products.product.add_to_cart' | t }}</span>
+          {%- render 'icon-arrow-long' -%}
+        </button>
+      </div>
     </quick-product-form>
   </div>
 </div>
