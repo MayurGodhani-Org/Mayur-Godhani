@@ -3576,6 +3576,7 @@ details-disclosure > details {
 .header {
   display: flex;
   align-items: center;
+  gap: 2rem;
 }
 
 .header-logo {
