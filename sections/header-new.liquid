@@ -1,16 +1,16 @@
-<div class="header-wrapper">
-  <header class="header page-width">
+<div class="header-cst__wrapper">
+  <header class="header-cst page-width">
     {%- liquid
       assign logo_width = settings.logo_width | plus: 1
       assign logo_width_large = logo_width | times: 2 
     -%}
-    <a href="{{ routes.root_url }}" class="header-logo" style="--logo-width: {{ logo_width }}px;">
+    <a href="{{ routes.root_url }}" class="header-cst__logo" style="--logo-width: {{ logo_width }}px;">
       {%- if settings.logo -%}
         {{ settings.logo | image_url: width: logo_width_large | image_tag }}
       {%- elsif request.page_type == 'index' %}
-        <h1 class="header-logo__heading">{{ shop.name }}</h1>
+        <h1 class="header-cst__logo-heading">{{ shop.name }}</h1>
       {% else %}
-        <span class="h1 header-logo__heading">{{ shop.name }}</span>
+        <span class="h1 header-cst__logo-heading">{{ shop.name }}</span>
       {%- endif -%}
     </a>
   </header>
