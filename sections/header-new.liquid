@@ -1,5 +1,5 @@
 <header class="header page-width">
-  <a href="{{ routes.root_url }}" class="header-logo">
+  <a href="{{ routes.root_url }}" class="header-logo" style="--logo-width: {{ settings.logo_width | plus: 1 }}px;">
     {%- if settings.logo -%}
       {%- assign logo_width_large = settings.logo_width | times: 2 -%}
       {{ settings.logo | image_url: width: logo_width_large | image_tag }}
