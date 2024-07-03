@@ -22,4 +22,5 @@
 .hero-text {
   display: flex;
   align-items: flex-end;
+  position: relative;
 }
