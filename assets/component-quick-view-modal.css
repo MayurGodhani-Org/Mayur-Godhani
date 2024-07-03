@@ -53,3 +53,22 @@
   appearance: none;
   cursor: pointer;
 }
+
+.quick-view__product {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.7rem;
+}
+
+.quick-view__product-image {
+  width: 12rem;
+  flex-shrink: 0;
+  margin-left: -0.3rem;
+  position: relative;
+}
+
+.quick-view__product-image:after {
+  content: '';
+  display: block;
+  padding-bottom: 116.666667%;
+}
