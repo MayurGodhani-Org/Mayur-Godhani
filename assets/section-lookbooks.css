@@ -53,6 +53,7 @@
   height: 1.6rem;
   background: rgba(248, 248, 248, 0.9);
   border-radius: 1.1rem;
+  user-select: none;
   cursor: pointer;
 }
 
