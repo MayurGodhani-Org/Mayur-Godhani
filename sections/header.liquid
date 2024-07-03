@@ -16,12 +16,14 @@
     <div class="header-promo__text">
       {{- section.settings.promotion_text -}}
     </div>
-    <div class="header-buttons">
-      <a href="{{ section.settings.button_link }}" class="button button-with-arrow">
-        <span class="text">{{ section.settings.button_label }}</span>
-        {%- render 'icon-arrow-long' -%}
-      </a>
-    </div>
+    {%- if section.settings.button_label != blank -%}
+      <div class="header-buttons">
+        <a href="{{ section.settings.button_link }}" class="button button-with-arrow">
+          <span class="text">{{ section.settings.button_label }}</span>
+          {%- render 'icon-arrow-long' -%}
+        </a>
+      </div>
+    {%- endif -%}
   </header>
 </div>
 
