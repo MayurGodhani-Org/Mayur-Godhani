@@ -32,7 +32,8 @@
       {%- endif -%}
       {%- if section.settings.button_label != blank -%}
         <a href="{{ section.settings.button_link }}" class="button button--with-arrow">
-          {{ section.settings.button_label }}
+          <span class="text">{{ section.settings.button_label }}</span>
+          {%- render 'icon-arrow-long' -%}
         </a>
       {%- endif -%}
     </div>
