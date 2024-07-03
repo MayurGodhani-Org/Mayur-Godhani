@@ -152,7 +152,7 @@
           "text": "#000000",
           "button": "#000000",
           "button_label": "#ffffff",
-          "button_hover": "#FFF544",
+          "button_hover": "#fff544",
           "button_label_hover": "#121212",
           "secondary_button_label": "#000000",
           "shadow": "#000000"
@@ -163,10 +163,10 @@
           "background": "#f5f5f5",
           "background_gradient": "",
           "text": "#000000",
-          "button": "#000000",
-          "button_label": "#ffffff",
-          "button_hover": "#FFF544",
-          "button_label_hover": "#000000",
+          "button": "#fff544",
+          "button_label": "#000000",
+          "button_hover": "#000000",
+          "button_label_hover": "#ffffff",
           "secondary_button_label": "#000000",
           "shadow": "#000000"
         }
@@ -178,7 +178,7 @@
           "text": "#ffffff",
           "button": "#ffffff",
           "button_label": "#000000",
-          "button_hover": "#FFF544",
+          "button_hover": "#fff544",
           "button_label_hover": "#121212",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
@@ -191,7 +191,7 @@
           "text": "#ffffff",
           "button": "#ffffff",
           "button_label": "#121212",
-          "button_hover": "#FFF544",
+          "button_hover": "#fff544",
           "button_label_hover": "#121212",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
@@ -204,7 +204,7 @@
           "text": "#ffffff",
           "button": "#ffffff",
           "button_label": "#334fb4",
-          "button_hover": "#FFF544",
+          "button_hover": "#fff544",
           "button_label_hover": "#121212",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
