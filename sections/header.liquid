@@ -10,12 +10,12 @@
       </button>
     </div>
     {%- liquid
-      assign logo_width = settings.logo_width | plus: 1
+      assign logo_width = section.settings.logo_width | plus: 1
       assign logo_width_large = logo_width | times: 2 
     -%}
     <a href="{{ routes.root_url }}" class="header-logo" style="--logo-width: {{ logo_width }}px;">
-      {%- if settings.logo -%}
-        {{ settings.logo | image_url: width: logo_width_large | image_tag }}
+      {%- if section.settings.logo -%}
+        {{ section.settings.logo | image_url: width: logo_width_large | image_tag }}
       {%- elsif request.page_type == 'index' %}
         <h1 class="header-logo__heading">{{ shop.name }}</h1>
       {% else %}
