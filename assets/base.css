@@ -1295,6 +1295,7 @@ button.shopify-payment-button__button--unbranded {
 }
 
 .button--with-arrow .icon {
+  justify-content: space-between;
   margin-left: 1rem;
 }
 
