@@ -55,6 +55,9 @@
                 </div>
               </fieldset>
             {%- else -%}
+              <div class="quick-view__product-option">
+                <div class="quick-view__option-name">{{ option.name }}</div>
+              </div>
             {%- endif -%}
           {%- endfor -%}
         </quick-variant-selects>
