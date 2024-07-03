@@ -24,3 +24,12 @@
   overflow: hidden auto;
   z-index: 99;
 }
+
+.quick-view__modal {
+  max-width: 31.1rem;
+  width: 100%;
+  background: #FFF;
+  padding: 3.6rem 2rem 2.5rem;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
