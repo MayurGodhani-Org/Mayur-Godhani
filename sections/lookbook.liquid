@@ -1,11 +1,21 @@
 <div class="lookbook">
-  
+  {% if section.settings.heading != blank %}
+    <div class="lookbook-header">
+      <h2>{{ section.settings.heading }}</h2>
+    </div>
+  {%- endif -%}
 </div>
 
 {% schema %}
 {
   "name": "Lookbooks",
   "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Tisso vison in the wild"
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",
