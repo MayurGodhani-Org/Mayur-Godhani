@@ -23,15 +23,15 @@
   <div class="hero-text page-width">
     <div class="hero-text__container">
       {%- if section.settings.heading != blank -%}
-        <h2>{{ section.settings.heading }}</h2>
+        <h2 class="hero-title">{{ section.settings.heading }}</h2>
       {%- endif -%}
       {%- if section.settings.text != blank -%}
-        <div class="rte">
+        <div class="hero-content rte">
           {{ section.settings.text }}
         </div>
       {%- endif -%}
       {%- if section.settings.button_label != blank -%}
-        <a href="{{ section.settings.button_link }}" class="button button--with-arrow">
+        <a href="{{ section.settings.button_link }}" class="hero-button button button--with-arrow">
           <span class="text">{{ section.settings.button_label }}</span>
           {%- render 'icon-arrow-long' -%}
         </a>
