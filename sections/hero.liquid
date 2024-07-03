@@ -16,6 +16,14 @@
         | image_url: width: 2560
         | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
       }}
+
+      {%- if section.settings.image_mobile -%}
+        {{
+          section.settings.image_mobile
+          | image_url: width: 2560
+          | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority, class: 'small-hide'
+        }}
+      {%- endif -%}
     {%- else -%}
       {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder' }}
     {%- endif -%}
