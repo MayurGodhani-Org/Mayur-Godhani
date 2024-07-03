@@ -7,11 +7,11 @@
       </svg>
     </button>
     <div class="quick-view__product">
-      <div class="quick-view__product-image">
+      <div class="quick-view__product-image media">
         {{ product.featured_media.preview_image | image_url: width: 240 | image_tag: loading: 'lazy' }}
       </div>
       <div class="quick-view__product-details">
-        
+        <h2 class="quick-view__product-title">{{ product.title }}</h2>
       </div>
     </div>
   </div>
