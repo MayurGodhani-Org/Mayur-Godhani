@@ -1,3 +1,24 @@
+{%- style -%}
+  .section-padding-{{ section.id }} {
+    padding-top: {{ section.settings.top_padding_mobile }};
+      padding-bottom: {{ section.settings.bottom_padding_mobile }};
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-padding-{{ section.id }} {
+      padding-top: {{ section.settings.top_padding_tablet }};
+      padding-bottom: {{ section.settings.bottom_padding_tablet }};
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .section-padding-{{ section.id }} {
+      padding-top: {{ section.settings.top_padding_desktop }};
+      padding-bottom: {{ section.settings.bottom_padding_desktop }};
+    }
+  }
+{%- endstyle -%}
+
 <div class="lookbook color-{{ section.settings.color_scheme }}">
   <div class="page-width">
     {% if section.settings.heading != blank %}
