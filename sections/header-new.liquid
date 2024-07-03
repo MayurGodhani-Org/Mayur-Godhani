@@ -1,4 +1,4 @@
-<div class="header-cst__wrapper color-{{ section.settings.color_scheme }}">
+<div class="header-cst__wrapper color-{{ section.settings.color_scheme }} gradient">
   <header class="header-cst page-width">
     {%- liquid
       assign logo_width = settings.logo_width | plus: 1
@@ -20,7 +20,14 @@
 {
   "name": "Header new",
   "class": "section section-header",
-  "settings": [],
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "color-scheme-1"
+    }
+  ],
   "presets": [
     {
       "name": "Header new"
