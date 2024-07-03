@@ -37,7 +37,7 @@
             {%- if option_name_downcase contains 'color' or option_name_downcase contains 'colour' -%}
               <fieldset class="quick-view__product-option">
                 <legend class="quick-view__option-name">{{ option.name }}</legend>
-                <div class="quick-view__options-pills">
+                <div class="quick-view__option-colors">
                   {%- for value in option.values -%}
                     {%- capture input_id -%}{{ option.name | handleize }}-{{ section.id }}-{{ forloop.index }}{%- endcapture -%}
                     <input 
