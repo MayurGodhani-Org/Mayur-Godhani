@@ -22,9 +22,11 @@
             <s>{{ current_variant.compare_at_price | money }}</s>
           {%- endif -%}
         </div>
-        <div class="quick-view__product-desc rte">
-          {{ product.description }}
-        </div>
+        {%- if product.description != blank -%}
+          <div class="quick-view__product-desc rte">
+            {{ product.description }}
+          </div>
+        {%- endif -%}
       </div>
     </div>
   </div>
