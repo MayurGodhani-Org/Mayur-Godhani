@@ -13,9 +13,11 @@
         <span class="h1 header-logo__heading">{{ shop.name }}</span>
       {%- endif -%}
     </a>
-    <div class="header-promo__text">
-      {{- section.settings.promotion_text -}}
-    </div>
+    {%- if section.settings.promotion_text != blank -%}
+      <div class="header-promo__text">
+        {{- section.settings.promotion_text -}}
+      </div>
+    {%- endif -%}
     {%- if section.settings.button_label != blank -%}
       <div class="header-buttons">
         <a href="{{ section.settings.button_link }}" class="button button-with-arrow">
