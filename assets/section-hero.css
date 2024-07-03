@@ -4,6 +4,12 @@
   position: relative;
 }
 
+.hero-image:before {
+  content: '';
+  display: block;
+  padding-bottom: 67.7333333%;
+}
+
 .hero-text {
   padding-top: 5.1rem;
   padding-bottom: 5.1rem;
