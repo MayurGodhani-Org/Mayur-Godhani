@@ -74,9 +74,9 @@
         "block_UGJYzz": {
           "type": "block",
           "settings": {
-            "product": "",
-            "position_top": 50,
-            "position_left": 50
+            "product": "dark-denim-top",
+            "position_top": 40,
+            "position_left": 76
           }
         }
       },
