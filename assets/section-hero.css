@@ -63,23 +63,23 @@
   .hero-text__container {
     max-width: 48.3rem;
   }
-
-  .hero-title {
-    font-size: 5rem;
-  }
-
-  .hero-content {
-    font-size: 1.8rem;
-  }
 }
 
 @media screen and (min-width: 990px) {
+  .hero-text__container {
+    max-width: 42rem;
+  }
+  
   .hero-text__container > * {
     margin-bottom: 3.2rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .hero-text__container {
+    max-width: 48.3rem;
+  }
+  
   .hero-text__container > * {
     margin-bottom: 5rem;
   }
