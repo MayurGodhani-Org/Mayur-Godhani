@@ -3086,6 +3086,12 @@ details[open] .modal-overlay::after {
   display: block;
 }
 
+.header-logo__heading {
+  font-size: 2rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
 .header-icons {
   display: flex;
   align-items: center;
