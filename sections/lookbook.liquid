@@ -28,7 +28,21 @@
     {%- endif -%}
     <div class="lookbook-grid">
       {%- for block in section.blocks -%}
-        <div class="lookbook-item">
+        {% style %}
+          .lookbook-item-{{ block.id }} {
+            --spacing-top: {{ block.settings.position_top_mobile }}%;
+            --spacing-left: {{ block.settings.position_left_mobile }}%
+          }
+
+          @media screen and (min-width: 750px) {
+            .lookbook-item-{{ block.id }} {
+              --spacing-top: {{ block.settings.position_top_desktop }}%;
+              --spacing-left: {{ block.settings.position_left_desktop }}%
+            }
+          }
+        {%- endstyle -%}
+      
+        <div class="lookbook-item lookbook-item-{{ block.id }}">
           <div class="lookbook-item__media">
             <div class="media media--square">
               {%- liquid
@@ -58,7 +72,7 @@
                 {{ 'product-' | append: index | placeholder_svg_tag: 'placeholder' }}
               {%- endif -%}
             </div>
-            <div class="lookbook-item__view-buton" style="--spacing-top: {{ block.settings.position_top }}%;--spacing-left: {{ block.settings.position_left }}%">
+            <div class="lookbook-item__view-buton">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                 <path d="M11.3457 7.04175V15.5033" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
                 <path d="M7.11523 11.2725H15.5768" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
