@@ -41,6 +41,10 @@
   .hero {
     flex-direction: column-reverse;
   }
+
+  .hero-text__container {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 750px) {
