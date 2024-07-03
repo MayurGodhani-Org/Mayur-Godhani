@@ -1,20 +1,20 @@
 {%- style -%}
   .section-padding-{{ section.id }} {
-    padding-top: {{ section.settings.top_padding_mobile }};
-    padding-bottom: {{ section.settings.bottom_padding_mobile }};
+    padding-top: {{ section.settings.top_padding_mobile }}px;
+    padding-bottom: {{ section.settings.bottom_padding_mobile }}px;
   }
 
   @media screen and (min-width: 750px) {
     .section-padding-{{ section.id }} {
-      padding-top: {{ section.settings.top_padding_tablet }};
-      padding-bottom: {{ section.settings.bottom_padding_tablet }};
+      padding-top: {{ section.settings.top_padding_tablet }}px;
+      padding-bottom: {{ section.settings.bottom_padding_tablet }}px;
     }
   }
 
   @media screen and (min-width: 990px) {
     .section-padding-{{ section.id }} {
-      padding-top: {{ section.settings.top_padding_desktop }};
-      padding-bottom: {{ section.settings.bottom_padding_desktop }};
+      padding-top: {{ section.settings.top_padding_desktop }}px;
+      padding-bottom: {{ section.settings.bottom_padding_desktop }}px;
     }
   }
 {%- endstyle -%}
