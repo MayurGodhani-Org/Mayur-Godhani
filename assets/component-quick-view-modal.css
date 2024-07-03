@@ -134,6 +134,7 @@
   padding: 1rem 1.5rem;
   border-left: 1px solid rgb(var(--color-foreground));
   position: relative;
+  cursor: pointer;
 }
 
 .quick-view__option-colors label:first-of-type {
