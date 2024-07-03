@@ -3153,6 +3153,8 @@ details[open] .modal-overlay::after {
 /* promotional-text */
 
 .promotional-text {
+  font-size: 1.6rem;
+  line-height: 0.875;
   padding: 1rem 0;
   text-align: center;
 }
