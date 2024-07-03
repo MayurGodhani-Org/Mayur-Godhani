@@ -163,6 +163,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .quick-view__option-select-arrow {
@@ -175,6 +176,7 @@
   align-items: center;
   justify-content: center;
   border-left: 1px solid rgb(var(--color-foreground));
+  pointer-events: none;
 }
 
 .quick-view__option-select-list {
