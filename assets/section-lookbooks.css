@@ -53,8 +53,13 @@
   height: 1.6rem;
   background: rgba(248, 248, 248, 0.9);
   border-radius: 1.1rem;
+  transition: all 0.3s ease;
   user-select: none;
   cursor: pointer;
+}
+
+.lookbook-item__view-buton:hover {
+  transform: rotate(180deg);
 }
 
 .lookbook-item__view-buton .icon {
