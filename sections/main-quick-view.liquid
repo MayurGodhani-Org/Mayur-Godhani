@@ -59,6 +59,11 @@
                 <div class="quick-view__option-name">{{ option.name }}</div>
                 <div class="quick-view__option-select">
                   <div class="quick-view__option-select-label">Choose your size</div>
+                  <div class="quick-view__option-select-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                      <path d="M2 2L8 8L14 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                    </svg>
+                  </div>
                   <div class="quick-view__option-select-list">
                     {%- for value in option.values -%}
                     {%- capture input_id -%}{{ option.name | handleize }}-{{ section.id }}-{{ forloop.index }}{%- endcapture -%}
