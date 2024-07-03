@@ -1,6 +1,26 @@
+
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Promotional bar",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Promotional bar"
+    }
+  ]
+}
 {% endschema %}
