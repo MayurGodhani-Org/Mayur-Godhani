@@ -20,9 +20,16 @@
         "button_link": "",
         "color_scheme": ""
       }
+    },
+    "lookbook_EN39yf": {
+      "type": "lookbook",
+      "settings": {
+        "color_scheme": ""
+      }
     }
   },
   "order": [
-    "hero_6j4wth"
+    "hero_6j4wth",
+    "lookbook_EN39yf"
   ]
 }
