@@ -55,9 +55,9 @@
           "type": "block",
           "settings": {
             "product": "chequered-red-shirt",
-            "position_top_desktop": 50,
+            "position_top_desktop": 21,
             "position_top_mobile": 15,
-            "position_left_desktop": 50,
+            "position_left_desktop": 62,
             "position_left_mobile": 70
           }
         },
@@ -65,9 +65,9 @@
           "type": "block",
           "settings": {
             "product": "classic-leather-jacket",
-            "position_top_desktop": 50,
+            "position_top_desktop": 18,
             "position_top_mobile": 15,
-            "position_left_desktop": 50,
+            "position_left_desktop": 72,
             "position_left_mobile": 70
           }
         },
