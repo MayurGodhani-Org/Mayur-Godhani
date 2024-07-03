@@ -19,11 +19,11 @@
   }
 {%- endstyle -%}
 
-<div class="lookbook color-{{ section.settings.color_scheme }}">
+<div class="lookbooks color-{{ section.settings.color_scheme }}">
   <div class="page-width section-padding-{{ section.id }}">
     {% if section.settings.heading != blank %}
-      <div class="lookbook-header">
-        <h2>{{ section.settings.heading }}</h2>
+      <div class="lookbooks-header">
+        <h2 class="lookbooks-heading">{{ section.settings.heading }}</h2>
       </div>
     {%- endif -%}
     <div class="lookbook-grid">
