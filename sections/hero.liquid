@@ -1,6 +1,6 @@
 {{ 'section-hero.css' | asset_url | stylesheet_tag }}
 
-<div class="hero">
+<div class="hero color-{{ section.settings.color_scheme }}">
   <div class="hero-image">
     {%- liquid
       assign sizes = '100vw'
