@@ -51,7 +51,7 @@
   left: calc(var(--spacing-left) - 0.8rem);
   width: 1.6rem;
   height: 1.6rem;
-  background: rgb(248 248 248 / 90%);
+  background: rgba(248, 248, 248, 0.9);
   border-radius: 1.1rem;
 }
 
