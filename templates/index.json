@@ -9,6 +9,12 @@
 */
 {
   "sections": {
+    "hero_6j4wth": {
+      "type": "hero",
+      "settings": {
+        "color_scheme": ""
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -39,6 +45,7 @@
     }
   },
   "order": [
+    "hero_6j4wth",
     "featured_collection"
   ]
 }
