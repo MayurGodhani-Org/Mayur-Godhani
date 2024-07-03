@@ -149,3 +149,36 @@
   width: 0.6rem;
   border-right: 1px solid rgb(var(--color-foreground));
 }
+
+.quick-view__option-select {
+    border: 1px solid rgb(var(--color-foreground));
+    position: relative;
+}
+
+.quick-view__option-select-label {
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  padding: 1.1rem 7rem 1.1rem 1.2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.quick-view__option-select-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgb(var(--color-foreground));
+}
+
+.quick-view__option-select-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
