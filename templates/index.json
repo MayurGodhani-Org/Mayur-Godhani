@@ -35,48 +35,60 @@
           "type": "block",
           "settings": {
             "product": "black-leather-bag",
-            "position_top": 56,
-            "position_left": 62
+            "position_top_desktop": 50,
+            "position_top_mobile": 50,
+            "position_left_desktop": 15,
+            "position_left_mobile": 70
           }
         },
         "block_rbTVE8": {
           "type": "block",
           "settings": {
             "product": "blue-silk-tuxedo",
-            "position_top": 54,
-            "position_left": 84
+            "position_top_desktop": 50,
+            "position_top_mobile": 50,
+            "position_left_desktop": 50,
+            "position_left_mobile": 50
           }
         },
         "block_69dKYM": {
           "type": "block",
           "settings": {
             "product": "chequered-red-shirt",
-            "position_top": 21,
-            "position_left": 62
+            "position_top_desktop": 50,
+            "position_top_mobile": 50,
+            "position_left_desktop": 50,
+            "position_left_mobile": 50
           }
         },
         "block_zCTmAK": {
           "type": "block",
           "settings": {
             "product": "classic-leather-jacket",
-            "position_top": 19,
-            "position_left": 72
+            "position_top_desktop": 50,
+            "position_top_mobile": 50,
+            "position_left_desktop": 50,
+            "position_left_mobile": 50
           }
         },
         "block_wwLeqB": {
           "type": "block",
           "settings": {
             "product": "classic-varsity-top",
-            "position_top": 26,
-            "position_left": 51
+            "position_top_desktop": 50,
+            "position_top_mobile": 50,
+            "position_left_desktop": 50,
+            "position_left_mobile": 50
           }
         },
         "block_UGJYzz": {
           "type": "block",
           "settings": {
             "product": "dark-denim-top",
-            "position_top": 40,
-            "position_left": 76
+            "position_top_desktop": 50,
+            "position_top_mobile": 50,
+            "position_left_desktop": 50,
+            "position_left_mobile": 50
           }
         }
       },
