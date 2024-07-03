@@ -3090,6 +3090,28 @@ details[open] .modal-overlay::after {
   grid-area: left-icons;
 }
 
+.menu-drawer__toggle {
+  width: 3.2rem;
+  height: 3.2rem;
+  background: transparent;
+  color: rgb(var(--color-foreground));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.menu-drawer__toggle .icon {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+
 .header-promo__text {
   grid-area: promo-text;
 }
