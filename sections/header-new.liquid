@@ -3,7 +3,10 @@
     {%- if settings.logo -%}
       {%- assign logo_width_large = settings.logo_width | times: 2 -%}
       {{ settings.logo | image_url: width: logo_width_large | image_tag }}
-    {%- else -%}
+    {%- elsif request.page_type == 'index' %}
+      <h1 class="header-logo__heading">{{ shop.name }}</h1>
+    {% else %}
+      <span class="h1 header-logo__heading">{{ shop.name }}</span>
     {%- endif -%}
   </a>
 </header>
