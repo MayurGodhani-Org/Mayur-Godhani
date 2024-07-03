@@ -7,6 +7,13 @@
   text-align: center;
 }
 
+@media screen and (max-width: 749px) {
+  .lookbooks .page-width {
+    padding-left: 1.672rem;
+    padding-right: 1.672rem;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .lookbooks-heading {
     font-size: calc(var(--font-heading-scale) * 3.6rem);
