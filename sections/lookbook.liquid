@@ -1,3 +1,5 @@
+{{ 'section-lookbooks.css' | asset_url | stylesheet_tag }}
+
 {%- style -%}
   .section-padding-{{ section.id }} {
     padding-top: {{ section.settings.top_padding_mobile }}px;
