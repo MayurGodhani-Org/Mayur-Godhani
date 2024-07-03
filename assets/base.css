@@ -103,7 +103,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 4rem;
+    padding: 0 2.4rem;
   }
 
   .page-width--narrow {
