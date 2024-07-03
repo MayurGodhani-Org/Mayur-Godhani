@@ -45,6 +45,10 @@
   .hero-text__container {
     text-align: center;
   }
+
+  .hero-text__container .hero-content {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 750px) {
