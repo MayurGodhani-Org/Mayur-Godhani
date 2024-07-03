@@ -11,7 +11,7 @@
       endif
 
       if section.settings.image_mobile
-        assign image_class = 'medium-hide large-up-hide'
+        assign image_class = 'small-hide'
       endif
     -%}
     {%- if section.settings.image_desktop -%}
@@ -25,7 +25,7 @@
         {{
           section.settings.image_mobile
           | image_url: width: 2560
-          | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority, class: 'small-hide'
+          | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority, class: 'medium-hide large-up-hide'
         }}
       {%- endif -%}
     {%- else -%}
