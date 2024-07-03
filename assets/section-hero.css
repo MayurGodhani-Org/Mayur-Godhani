@@ -9,11 +9,11 @@
   padding-bottom: 5.1rem;
 }
 
-.hero-text > * {
+.hero-text__container > * {
   margin: 0 0 5rem;
 }
 
-.hero-text > *:last-child {
+.hero-text__container > *:last-child {
   margin-bottom: 0;
 }
 
