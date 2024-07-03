@@ -56,6 +56,10 @@
   .hero-title {
     font-size: 5rem;
   }
+
+  .hero-content {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (min-width: 990px) {
@@ -65,6 +69,10 @@
 
   .hero-title {
     font-size: 7rem;
+  }
+
+  .hero-content {
+    font-size: 2rem;
   }
 }
 
