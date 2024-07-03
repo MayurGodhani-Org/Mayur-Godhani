@@ -219,3 +219,7 @@
   background: #000;
   color: #FFF;
 }
+
+.quick-view__form-buttons {
+  margin-top: 5rem;
+}
