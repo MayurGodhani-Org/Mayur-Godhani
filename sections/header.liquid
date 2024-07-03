@@ -1,12 +1,14 @@
 <div class="header-wrapper color-{{ section.settings.color_scheme }} gradient">
   <header class="header page-width">
-    <button type="button" class="menu-drawer__toggle medium-hide large-up-hide">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13" fill="none" class="icon icon-hamburger">
-        <path d="M1 6.5H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M1 1.5H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M1 11.5H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
+    <div class="header-icons medium-hide large-up-hide">
+      <button type="button" class="menu-drawer__toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13" fill="none" class="icon icon-hamburger">
+          <path d="M1 6.5H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 1.5H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 11.5H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
     {%- liquid
       assign logo_width = settings.logo_width | plus: 1
       assign logo_width_large = logo_width | times: 2 
