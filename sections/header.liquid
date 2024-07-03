@@ -13,7 +13,7 @@
       assign logo_width = section.settings.logo_width | plus: 1
       assign logo_width_large = logo_width | times: 2 
     -%}
-    <a href="{{ routes.root_url }}" class="header-logo" style="--logo-width: {{ logo_width }}px;">
+    <a href="{{ routes.root_url }}" class="header-logo full-unstyled-link" style="--logo-width: {{ logo_width }}px;">
       {%- if section.settings.logo -%}
         {{ section.settings.logo | image_url: width: logo_width_large | image_tag }}
       {%- elsif request.page_type == 'index' %}
