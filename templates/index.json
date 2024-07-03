@@ -89,7 +89,14 @@
         "block_UGJYzz"
       ],
       "settings": {
-        "color_scheme": ""
+        "heading": "Tisso vison in the wild",
+        "color_scheme": "",
+        "top_padding_desktop": 90,
+        "top_padding_tablet": 60,
+        "top_padding_mobile": 40,
+        "bottom_padding_desktop": 52,
+        "bottom_padding_tablet": 52,
+        "bottom_padding_mobile": 24
       }
     }
   },
