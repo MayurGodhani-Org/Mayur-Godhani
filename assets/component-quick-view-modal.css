@@ -20,7 +20,7 @@
   padding: 1.5rem;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease;
+  transition: all var(--duration-medium) ease;
   overflow: hidden auto;
   z-index: 99;
 }
@@ -211,7 +211,7 @@
   display: block;
   padding: 1rem 1.6rem;
   text-align: center;
-  transition: 0.3s ease-out;
+  transition: var(--duration-medium) ease-out;
   cursor: pointer;
 }
 
