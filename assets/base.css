@@ -3056,6 +3056,12 @@ details[open] .modal-overlay::after {
 
 /* header */
 
+.section-header {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
 .header-wrapper {
   --page-width: 144.2rem;
   padding: 1rem 0;
