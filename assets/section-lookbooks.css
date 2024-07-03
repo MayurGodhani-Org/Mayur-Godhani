@@ -27,3 +27,16 @@
 .lookbook-item__media {
   position: relative;
 }
+
+.lookbook-item__view-buton {
+  position: absolute;
+  top: calc(var(--spacing-top) - 1.1rem);
+  left: calc(var(--spacing-left) - 1.1rem);
+  width: 2.2rem;
+  height: 2.2rem;
+  background: rgb(248 248 248 / 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.1rem;
+}
