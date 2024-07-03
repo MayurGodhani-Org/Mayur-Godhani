@@ -105,3 +105,36 @@
   letter-spacing: -0.01em;
   overflow: hidden;
 }
+
+.quick-view__product-option {
+  padding: 0;
+  margin: 0 0 1.1rem;
+  border: 0;
+}
+
+.quick-view__option-name {
+  font-size: 1.4rem;
+  line-height: 1.28571429;
+  color: #333333;
+  display: block;
+  padding: 0;
+  margin-bottom: 0.6rem;
+}
+
+.quick-view__option-colors {
+  display: flex;
+  border: 1px solid rgb(var(--color-foreground));
+}
+
+.quick-view__option-colors label {
+  flex: 1 1 50%;
+  font-size: 1.8rem;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  padding: 1rem 1.5rem;
+  border-left: 1px solid rgb(var(--color-foreground));
+}
+
+.quick-view__option-colors label:first-of-type {
+  border-left: 0;
+}
