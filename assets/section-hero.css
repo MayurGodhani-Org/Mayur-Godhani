@@ -49,6 +49,14 @@
   .hero-text__container .hero-content {
     margin-bottom: 0;
   }
+
+  .hero-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3.9rem 1.5rem;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 750px) {
