@@ -1240,7 +1240,7 @@ button.shopify-payment-button__button--unbranded {
   height: 100%;
   opacity: 0;
   background-color: rgba(var(--color-button-hover), var(--alpha-button-background));
-  transition: var(--duration-long) ease-in;
+  transition: var(--duration-medium) ease-in;
   z-index: -1;
 }
 
