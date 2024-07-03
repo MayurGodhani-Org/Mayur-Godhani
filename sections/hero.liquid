@@ -43,10 +43,12 @@
         </div>
       {%- endif -%}
       {%- if section.settings.button_label != blank -%}
-        <a href="{{ section.settings.button_link }}" class="hero-button button button--with-arrow">
-          <span class="text">{{ section.settings.button_label }}</span>
-          {%- render 'icon-arrow-long' -%}
-        </a>
+        <div class="hero-buttons">
+          <a href="{{ section.settings.button_link }}" class="hero-button button button--with-arrow">
+            <span class="text">{{ section.settings.button_label }}</span>
+            {%- render 'icon-arrow-long' -%}
+          </a>
+        </div>
       {%- endif -%}
     </div>
   </div>
