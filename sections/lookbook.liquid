@@ -24,9 +24,7 @@
 <div class="lookbooks color-{{ section.settings.color_scheme }}">
   <div class="page-width section-padding-{{ section.id }}">
     {% if section.settings.heading != blank %}
-      <div class="lookbooks-header">
-        <h2 class="lookbooks-heading">{{ section.settings.heading }}</h2>
-      </div>
+      <h2 class="lookbooks-heading">{{ section.settings.heading }}</h2>
     {%- endif -%}
     <div class="lookbook-grid">
       {%- for block in section.blocks -%}
