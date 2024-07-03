@@ -14,12 +14,12 @@
       {%- endif -%}
     </a>
     {%- if section.settings.promotion_text != blank -%}
-      <div class="header-promo__text">
+      <div class="header-promo__text small-hide">
         {{- section.settings.promotion_text -}}
       </div>
     {%- endif -%}
     {%- if section.settings.button_label != blank -%}
-      <div class="header-buttons">
+      <div class="header-buttons small-hide">
         <a href="{{ section.settings.button_link }}" class="button button--with-arrow">
           <span class="text">{{ section.settings.button_label }}</span>
           {%- render 'icon-arrow-long' -%}
