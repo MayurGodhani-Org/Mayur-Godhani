@@ -57,6 +57,24 @@
             {%- else -%}
               <div class="quick-view__product-option">
                 <div class="quick-view__option-name">{{ option.name }}</div>
+                <div class="quick-view__option-select">
+                  <div class="quick-view__option-select-label">Choose your size</div>
+                  <div class="quick-view__option-select-list">
+                    {%- for value in option.values -%}
+                    {%- capture input_id -%}{{ option.name | handleize }}-{{ section.id }}-{{ forloop.index }}{%- endcapture -%}
+                      <input 
+                        type="radio"
+                        name="{{ option.name }}"
+                        id="{{ input_id }}"
+                        class="quick-view__options-input visually-hidden"
+                        value="{{ value }}"
+                      >
+                      <label for="{{ input_id }}">
+                        {{- value -}}
+                      </label>
+                    {%- endfor -%}
+                  </div>
+                </div>
               </div>
             {%- endif -%}
           {%- endfor -%}
