@@ -1215,7 +1215,7 @@ button.shopify-payment-button__button--unbranded {
   font-size: 1.6rem;
   text-decoration: none;
   color: rgb(var(--color-button-text));
-  transition: box-shadow var(--duration-short) ease;
+  transition: box-shadow var(--duration-medium) ease;
   -webkit-appearance: none;
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
@@ -1240,7 +1240,7 @@ button.shopify-payment-button__button--unbranded {
   height: 100%;
   opacity: 0;
   background-color: rgba(var(--color-button-hover), var(--alpha-button-background));
-  transition: 0.5s ease;
+  transition: var(--duration-medium) ease;
   z-index: -1;
 }
 
