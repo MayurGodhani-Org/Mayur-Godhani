@@ -85,9 +85,9 @@
           "type": "block",
           "settings": {
             "product": "dark-denim-top",
-            "position_top_desktop": 50,
+            "position_top_desktop": 57,
             "position_top_mobile": 15,
-            "position_left_desktop": 50,
+            "position_left_desktop": 61,
             "position_left_mobile": 70
           }
         }
