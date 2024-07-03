@@ -1,7 +1,7 @@
 {%- style -%}
   .section-padding-{{ section.id }} {
     padding-top: {{ section.settings.top_padding_mobile }};
-      padding-bottom: {{ section.settings.bottom_padding_mobile }};
+    padding-bottom: {{ section.settings.bottom_padding_mobile }};
   }
 
   @media screen and (min-width: 750px) {
@@ -20,7 +20,7 @@
 {%- endstyle -%}
 
 <div class="lookbook color-{{ section.settings.color_scheme }}">
-  <div class="page-width">
+  <div class="page-width section-padding-{{ section.id }}">
     {% if section.settings.heading != blank %}
       <div class="lookbook-header">
         <h2>{{ section.settings.heading }}</h2>
