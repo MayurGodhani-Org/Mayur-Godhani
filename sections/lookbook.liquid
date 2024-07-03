@@ -4,6 +4,40 @@
       <h2>{{ section.settings.heading }}</h2>
     </div>
   {%- endif -%}
+  <div class="lookbook-grid">
+    {%- for block in section.blocks -%}
+      <div class="lookbook-item">
+        <div class="lookbook-item__media">
+          {%- liquid
+            assign lookbook_product = block.settings.product
+            assign lookbook_image = lookbook_product.featured_media.preview_image
+             
+            if block.settings.image
+              assign lookbook_image = block.settings.image
+            endif
+
+            assign sizes = '100vw'
+            assign widths = '400, 600, 800, 1200, 1600'
+            assign fetch_priority = 'auto'
+            if section.index == 1
+              assign fetch_priority = 'high'
+            endif
+          -%}
+          
+          {% if lookbook_image != blank %}
+            {{
+              lookbook_image
+              | image_url: width: 800
+              | image_tag: loading: 'lazy', sizes: sizes, widths: widths, fetchpriority: fetch_priority
+            }}
+          {%- else -%}
+            {%- capture index %}{%- cycle '1', '2', '3', '4', '5', '6' -%}{%- endcapture -%}
+            {{ 'product-' | append: index | placeholder_svg_tag: 'placeholder' }}
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
 </div>
 
 {% schema %}
