@@ -1,7 +1,7 @@
 {{ 'section-hero.css' | asset_url | stylesheet_tag }}
 
 <div class="hero color-{{ section.settings.color_scheme }}">
-  <div class="hero-image">
+  <div class="hero-image media media--transparent">
     {%- liquid
       assign sizes = '100vw'
       assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 2560'
