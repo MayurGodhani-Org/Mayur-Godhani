@@ -3143,3 +3143,9 @@ details[open] .modal-overlay::after {
     grid-template-areas: 'logo promo-text buttons';
   }
 }
+
+/* promotional-text */
+
+.promotional-text {
+  text-align: center;
+}
