@@ -1,12 +1,21 @@
-
+<header class="header page-width">
+  <a href="{{ routes.root_url }}" class="header-logo">
+    {%- if settings.logo -%}
+      {%- assign logo_width_large = settings.logo_width | times: 2 -%}
+      {{ settings.logo | image_url: width: logo_width_large | image_tag }}
+    {%- else -%}
+    {%- endif -%}
+  </a>
+</header>
 
 {% schema %}
 {
-  "name": "Header",
+  "name": "Header new",
+  "class": "section section-header",
   "settings": [],
   "presets": [
     {
-      "name": "Header"
+      "name": "Header new"
     }
   ]
 }
