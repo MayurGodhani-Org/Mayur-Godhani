@@ -48,7 +48,8 @@
                       value="{{ value }}"
                     >
                     <label for="{{ input_id }}">
-                      <span>{{ value }}</span>
+                      <span class="color" style="background-color: {{ value }};"></span>
+                      <span class="text">{{ value }}</span>
                     </label>
                   {%- endfor -%}
                 </div>
