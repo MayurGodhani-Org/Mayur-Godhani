@@ -46,7 +46,7 @@
           "settings": {
             "product": "blue-silk-tuxedo",
             "position_top_desktop": 50,
-            "position_top_mobile": 50,
+            "position_top_mobile": 15,
             "position_left_desktop": 15,
             "position_left_mobile": 70
           }
