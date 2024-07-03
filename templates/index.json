@@ -21,6 +21,13 @@
         "color_scheme": ""
       }
     },
+    "promotional_bar_namxL3": {
+      "type": "promotional-bar",
+      "settings": {
+        "text": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR",
+        "color_scheme": "scheme-2"
+      }
+    },
     "lookbook_EN39yf": {
       "type": "lookbook",
       "settings": {
@@ -30,6 +37,7 @@
   },
   "order": [
     "hero_6j4wth",
+    "promotional_bar_namxL3",
     "lookbook_EN39yf"
   ]
 }
