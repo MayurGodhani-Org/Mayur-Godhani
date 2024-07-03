@@ -94,8 +94,10 @@
 }
 
 .quick-view__product-desc {
+  max-height: 4.28571428em;
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.07142857;
   letter-spacing: -0.01em;
+  overflow: hidden;
 }
