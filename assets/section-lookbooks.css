@@ -58,7 +58,7 @@
   background: rgba(248, 248, 248, 0.9);
   border-radius: 1.1rem;
   box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);
-  animation: pulse 1s infinite paused;
+  animation: pulse 2s infinite paused;
   transition: all 0.3s ease;
   user-select: none;
   cursor: pointer;
@@ -79,7 +79,7 @@
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
   }
   70% {
-    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
   }
   100% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
