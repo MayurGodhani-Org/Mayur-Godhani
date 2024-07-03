@@ -73,13 +73,13 @@
           {
             "type": "color",
             "id": "button_hover",
-            "label": "t:settings_schema.colors.settings.button_background.label",
+            "label": "Solid button background hover",
             "default": "#FFF544"
           },
           {
             "type": "color",
             "id": "button_label_hover",
-            "label": "t:settings_schema.colors.settings.button_label.label",
+            "label": "Solid button label hover",
             "default": "#121212"
           },
           {
