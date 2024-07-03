@@ -3567,22 +3567,22 @@ details-disclosure > details {
   }
 }
 
-/* header-new */
+/* header */
 
-.header-cst__wrapper {
+.header-wrapper {
   padding: 1rem 0;
 }
 
-.header-cst {
+.header {
   display: flex;
   align-items: center;
 }
 
-.header-cst__logo {
+.header-logo {
   flex-shrink: 0;
 }
 
-.header-cst__logo img {
+.header-logo img {
   max-width: 100%;
   width: var(--logo-width, 150px);
   height: auto;
