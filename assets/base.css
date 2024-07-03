@@ -80,7 +80,7 @@
   max-width: var(--page-width);
   width: 100%;
   margin: 0 auto;
-  padding: 0 1.7rem;
+  padding: 0 1.5rem;
 }
 
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
@@ -3069,7 +3069,7 @@ details[open] .modal-overlay::after {
 
 .header-logo img {
   max-width: 100%;
-  width: var(--logo-width, 150px);
+  width: var(--logo-width, 15rem);
   height: auto;
   display: block;
 }
