@@ -22,14 +22,14 @@
 }
 
 .lookbook-grid {
-  --grid-gap: 2rem;
+  --grid-gap: 0.4rem;
   display: flex;
   flex-wrap: wrap;
   gap: var(--grid-gap);
 }
 
 .lookbook-item {
-  width: calc(33.3333333% - var(--grid-gap) * 2 / 3);
+  width: calc(50% - var(--grid-gap) * 0.5);
 }
 
 .lookbook-item__media {
@@ -50,4 +50,14 @@
   width: 100%;
   height: 100%;
   display: block;
+}
+
+@media screen and (min-width: 750px) {
+  .lookbook-grid {
+    --grid-gap: 2rem;
+  }
+  
+  .lookbook-item {
+    width: calc(33.3333333% - var(--grid-gap) * 2 / 3);
+  }
 }
