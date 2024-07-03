@@ -3088,6 +3088,7 @@ details[open] .modal-overlay::after {
 
 .header-icons__left {
   grid-area: left-icons;
+  margin-left: -0.6rem;
 }
 
 .menu-drawer__toggle {
