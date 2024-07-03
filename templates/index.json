@@ -28,8 +28,66 @@
         "color_scheme": "scheme-2"
       }
     },
-    "lookbook_EN39yf": {
+    "lookbook_F3MCE6": {
       "type": "lookbook",
+      "blocks": {
+        "block_zdLTnY": {
+          "type": "block",
+          "settings": {
+            "product": "",
+            "position_top": 50,
+            "position_left": 50
+          }
+        },
+        "block_rbTVE8": {
+          "type": "block",
+          "settings": {
+            "product": "",
+            "position_top": 50,
+            "position_left": 50
+          }
+        },
+        "block_69dKYM": {
+          "type": "block",
+          "settings": {
+            "product": "",
+            "position_top": 50,
+            "position_left": 50
+          }
+        },
+        "block_zCTmAK": {
+          "type": "block",
+          "settings": {
+            "product": "",
+            "position_top": 50,
+            "position_left": 50
+          }
+        },
+        "block_wwLeqB": {
+          "type": "block",
+          "settings": {
+            "product": "",
+            "position_top": 50,
+            "position_left": 50
+          }
+        },
+        "block_UGJYzz": {
+          "type": "block",
+          "settings": {
+            "product": "",
+            "position_top": 50,
+            "position_left": 50
+          }
+        }
+      },
+      "block_order": [
+        "block_zdLTnY",
+        "block_rbTVE8",
+        "block_69dKYM",
+        "block_zCTmAK",
+        "block_wwLeqB",
+        "block_UGJYzz"
+      ],
       "settings": {
         "color_scheme": ""
       }
@@ -38,6 +96,6 @@
   "order": [
     "hero_6j4wth",
     "promotional_bar_namxL3",
-    "lookbook_EN39yf"
+    "lookbook_F3MCE6"
   ]
 }
