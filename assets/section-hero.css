@@ -52,11 +52,19 @@
   .hero-text__container {
     max-width: 48.3rem;
   }
+
+  .hero-title {
+    font-size: 5rem;
+  }
 }
 
 @media screen and (min-width: 990px) {
   .hero-text__container > * {
     margin-bottom: 3.2rem;
+  }
+
+  .hero-title {
+    font-size: 7rem;
   }
 }
 
