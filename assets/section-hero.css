@@ -37,6 +37,12 @@
   min-width: 11.7rem;
 }
 
+@media screen and (max-width: 749px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .hero:before {
     content: '';
