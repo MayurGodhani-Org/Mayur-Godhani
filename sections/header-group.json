@@ -30,9 +30,15 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "header_new_jcbjcp": {
+      "type": "header-new",
+      "settings": {
+      }
     }
   },
   "order": [
-    "header"
+    "header",
+    "header_new_jcbjcp"
   ]
 }
