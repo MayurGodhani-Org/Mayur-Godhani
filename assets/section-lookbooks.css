@@ -45,6 +45,10 @@
   position: relative;
 }
 
+.lookbook-item__media:hover .lookbook-item__view-buton {
+  animation-play-state: running;
+}
+
 .lookbook-item__view-buton {
   position: absolute;
   top: calc(var(--spacing-top) - 0.8rem);
@@ -53,6 +57,8 @@
   height: 1.6rem;
   background: rgba(248, 248, 248, 0.9);
   border-radius: 1.1rem;
+  box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+  animation: pulse 2s infinite;
   transition: all 0.3s ease;
   user-select: none;
   cursor: pointer;
@@ -66,6 +72,21 @@
   width: 100%;
   height: 100%;
   display: block;
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
 }
 
 @media screen and (min-width: 750px) {
