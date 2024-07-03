@@ -22,6 +22,19 @@
   </div>
   <div class="hero-text page-width">
     <div class="hero-text__container">
+      {%- if section.settings.heading != blank -%}
+        <h2>{{ section.settings.heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <div class="rte">
+          {{ section.settings.text }}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.button_label != blank -%}
+        <a href="{{ section.settings.button_link }}" class="button button--with-arrow">
+          {{ section.settings.button_label }}
+        </a>
+      {%- endif -%}
     </div>
   </div>
 </div>
@@ -44,8 +57,8 @@
     },
     {
       "type": "inline_richtext",
-      "id": "title",
-      "label": "Title",
+      "id": "heading",
+      "label": "Heading",
       "default": "The Gift Guide"
     },
     {
