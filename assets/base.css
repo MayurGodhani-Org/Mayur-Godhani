@@ -3577,3 +3577,14 @@ details-disclosure > details {
   display: flex;
   align-items: center;
 }
+
+.header-cst__logo {
+  flex-shrink: 0;
+}
+
+.header-cst__logo img {
+  max-width: 100%;
+  width: var(--logo-width, 150px);
+  height: auto;
+  display: block;
+}
