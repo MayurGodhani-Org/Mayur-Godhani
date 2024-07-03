@@ -14,6 +14,11 @@
     "header": {
       "type": "header",
       "settings": {
+        "logo": "shopify:\/\/shop_images\/logo.svg",
+        "logo_width": 151,
+        "promotion_text": "Find the ideal gift for your loved ones.",
+        "button_label": "choose gift",
+        "button_link": "",
         "color_scheme": "scheme-2"
       }
     }
