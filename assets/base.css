@@ -3582,3 +3582,8 @@ details-disclosure > details {
   min-width: 20.7rem;
   padding: 0 2.2rem;
 }
+
+.header-buttons .button .text {
+  margin-left: 1.9rem;
+  margin-right: 0.7rem;
+}
