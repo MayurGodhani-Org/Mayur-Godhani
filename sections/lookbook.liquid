@@ -58,7 +58,7 @@
                 {{ 'product-' | append: index | placeholder_svg_tag: 'placeholder' }}
               {%- endif -%}
             </div>
-            <div class="lookbook-item__toggle">
+            <div class="lookbook-item__toggle" style="--spacing-top: {{ block.settings.position_top }}%;--spacing-left: {{ block.settings.position_left }}%">
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none" class="icon">
                 <path d="M5.3457 1.04175V9.50329" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
                 <path d="M1.11523 5.27246H9.57677" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
