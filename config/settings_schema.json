@@ -72,6 +72,18 @@
           },
           {
             "type": "color",
+            "id": "button_hover",
+            "label": "t:settings_schema.colors.settings.button_background.label",
+            "default": "#FFF544"
+          },
+          {
+            "type": "color",
+            "id": "button_label_hover",
+            "label": "t:settings_schema.colors.settings.button_label.label",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
             "id": "secondary_button_label",
             "label": "t:settings_schema.colors.settings.secondary_button_label.label",
             "default": "#121212"
