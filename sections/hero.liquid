@@ -1,7 +1,25 @@
 {{ 'section-hero.css' | asset_url | stylesheet_tag }}
 
 <div class="hero">
-  
+  <div class="hero-image">
+      {%- liquid
+        assign sizes = '100vw'
+        assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 2560'
+        assign fetch_priority = 'auto'
+        if section.index == 1
+          assign fetch_priority = 'high'
+        endif
+      -%}
+      {%- if section.settings.image -%}
+        {{
+          section.settings.image
+          | image_url: width: 2560
+          | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+        }}
+      {%- else -%}
+        {%- render 'hero-placeholder' -%}
+      {%- endif -%}
+  </div>
 </div>
 
 {% schema %}
