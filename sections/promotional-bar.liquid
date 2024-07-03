@@ -1,4 +1,10 @@
-
+{% if section.settings.text != blank %}
+  <div class="promotional-text">
+    <div class="page-width">
+      {{ section.settings.text }}
+    </div>
+  </div>
+{%- endif -%}
 
 {% schema %}
 {
