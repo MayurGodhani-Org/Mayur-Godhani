@@ -183,4 +183,39 @@
   display: none;
   position: absolute;
   top: 100%;
+  left: -1px;
+  right: -1px;
+  max-height: 9.9rem;
+  background: #FFF;
+  border: 1px solid rgb(var(--color-foreground));
+  overflow: hidden auto;
+  z-index: 1;
+}
+
+.quick-view__option-select-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgb(var(--color-foreground));
+}
+
+.quick-view__option-select-list label {
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  display: block;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.quick-view__option-select-list label:hover {
+  background: #000;
+  color: #FFF;
 }
