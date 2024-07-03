@@ -3,6 +3,13 @@
   position: relative;
 }
 
+.hero:before {
+  content: '';
+  width: 0;
+  display: block;
+  padding-bottom: 54.1666667%;
+}
+
 .hero-image {
   position: absolute;
   top: 0;
