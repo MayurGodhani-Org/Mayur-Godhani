@@ -45,4 +45,8 @@
     align-items: flex-end;
     position: relative;
   }
+
+  .hero-text__container {
+    max-width: 48.3rem;
+  }
 }
