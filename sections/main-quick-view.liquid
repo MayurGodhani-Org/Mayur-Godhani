@@ -1,3 +1,5 @@
+{%- assign current_variant = product.selected_or_first_available_variant -%}
+
 <div class="quick-view__modal-wrapper">
   <div class="quick-view__modal">
     <button class="quick-view__modal-close">
@@ -12,6 +14,15 @@
       </div>
       <div class="quick-view__product-details">
         <h2 class="quick-view__product-title">{{ product.title }}</h2>
+        <div class="quick-view__product-price">
+          <span>{{ current_variant.price | money }}</span>
+          {%- if current_variant.compare_at_price > current_variant.price -%}
+            <s>{{ current_variant.compare_at_price | money }}</s>
+          {%- endif -%}
+        </div>
+        <div class="quick-view__product-desc rte">
+          {{ product.description }}
+        </div>
       </div>
     </div>
   </div>
