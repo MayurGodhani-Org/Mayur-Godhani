@@ -23,3 +23,7 @@
 .lookbook-item {
   width: calc(33.3333333% - var(--grid-gap) * 2 / 3);
 }
+
+.lookbook-item__media {
+  position: relative;
+}
