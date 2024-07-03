@@ -10,7 +10,7 @@
       </button>
     </div>
     {%- liquid
-      assign logo_width = section.settings.logo_width | plus: 1
+      assign logo_width = section.settings.logo_width
       assign logo_width_large = logo_width | times: 2 
     -%}
     <a href="{{ routes.root_url }}" class="header-logo full-unstyled-link" style="--logo-width: {{ logo_width }}px;">
