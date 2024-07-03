@@ -12,3 +12,14 @@
   line-height: 1.19444444;
   margin: 0 0 3rem;
 }
+
+.lookbook-grid {
+  --grid-gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--grid-gap);
+}
+
+.lookbook-item {
+  width: calc(33.3333333% - var(--grid-gap) * 2 / 3);
+}
