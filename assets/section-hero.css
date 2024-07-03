@@ -1,5 +1,6 @@
 .hero {
   --page-width: 140.6rem;
+  display: flex;
   position: relative;
 }
 
