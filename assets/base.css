@@ -3572,3 +3572,8 @@ details-disclosure > details {
 .header-cst__wrapper {
   padding: 1rem 0;
 }
+
+.header-cst {
+  display: flex;
+  align-items: center;
+}
