@@ -29,6 +29,36 @@
         {%- endif -%}
       </div>
     </div>
+    <quick-product-form class="quick-view__product-form">
+      {%- unless product.has_only_default_variant -%}
+        <quick-variant-selects class="quick-view__product-options">
+          {%- for option in product.options_with_values -%}
+            {%- assign option_name_downcase = option.name | downcase -%}
+            {%- if option_name_downcase contains 'color' or option_name_downcase contains 'colour' -%}
+              <fieldset class="quick-view__product-option">
+                <legend class="quick-view__option-name">{{ option.name }}</legend>
+                <div class="quick-view__options-pills">
+                  {%- for value in option.values -%}
+                    {%- capture input_id -%}{{ option.name | handleize }}-{{ section.id }}-{{ forloop.index }}{%- endcapture -%}
+                    <input 
+                      type="radio"
+                      name="{{ option.name }}"
+                      id="{{ input_id }}"
+                      class="quick-view__options-input"
+                      value="{{ value }}"
+                    >
+                    <label for="{{ input_id }}">
+                      <span>{{ value }}</span>
+                    </label>
+                  {%- endfor -%}
+                </div>
+              </fieldset>
+            {%- else -%}
+            {%- endif -%}
+          {%- endfor -%}
+        </quick-variant-selects>
+      {%- endunless -%}
+    </quick-product-form>
   </div>
 </div>
 
