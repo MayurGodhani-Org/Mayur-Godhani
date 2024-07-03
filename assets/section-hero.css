@@ -9,6 +9,12 @@
   padding-bottom: 5.1rem;
 }
 
+.hero-title {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 2.4rem;
+}
+
 @media screen and (min-width: 750px) {
   .hero:before {
     content: '';
