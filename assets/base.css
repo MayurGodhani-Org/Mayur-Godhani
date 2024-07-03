@@ -3574,3 +3574,8 @@ details-disclosure > details {
   height: auto;
   display: block;
 }
+
+.header-buttons .button {
+  min-width: 20.7rem;
+  padding: 0 2.2rem;
+}
