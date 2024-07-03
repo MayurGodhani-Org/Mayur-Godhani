@@ -78,6 +78,10 @@
   flex: 1;
 }
 
+.quick-view__product-details > *:last-child {
+  margin-bottom: 0;
+}
+
 .quick-view__product-title {
   font-size: 1.6rem;
   font-weight: 300;
