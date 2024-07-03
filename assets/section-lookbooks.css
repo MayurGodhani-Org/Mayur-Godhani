@@ -47,10 +47,10 @@
 
 .lookbook-item__view-buton {
   position: absolute;
-  top: calc(var(--spacing-top) - 1.1rem);
-  left: calc(var(--spacing-left) - 1.1rem);
-  width: 2.2rem;
-  height: 2.2rem;
+  top: calc(var(--spacing-top) - 0.8rem);
+  left: calc(var(--spacing-left) - 0.8rem);
+  width: 1.6rem;
+  height: 1.6rem;
   background: rgb(248 248 248 / 90%);
   border-radius: 1.1rem;
 }
@@ -68,5 +68,12 @@
   
   .lookbook-item {
     width: calc(33.3333333% - var(--grid-gap) * 2 / 3);
+  }
+
+  .lookbook-item__view-buton {
+    top: calc(var(--spacing-top) - 1.1rem);
+    left: calc(var(--spacing-left) - 1.1rem);
+    width: 2.2rem;
+    height: 2.2rem;
   }
 }
