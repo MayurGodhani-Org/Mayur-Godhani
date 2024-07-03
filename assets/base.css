@@ -1222,6 +1222,12 @@ button.shopify-payment-button__button--unbranded {
   z-index: 1;
 }
 
+.button:hover,
+.shopify-challenge__button:hover,
+.customer button:hover {
+  color: rgb(var(--color-button-hover-text));
+}
+
 .button:after,
 .shopify-challenge__button:after,
 .customer button:after {
@@ -1232,7 +1238,6 @@ button.shopify-payment-button__button--unbranded {
   width: 0;
   width: 100%;
   height: 100%;
-  color: rgb(var(--color-button-hover-text));
   background-color: rgba(var(--color-button-hover), var(--alpha-button-background));
   transition: 0.3s ease;
   z-index: -1;
