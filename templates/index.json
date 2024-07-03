@@ -12,6 +12,11 @@
     "hero_6j4wth": {
       "type": "hero",
       "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/hero-placeholder.svg",
+        "title": "The Gift Guide",
+        "text": "<p>Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.<\/p>",
+        "button_label": "Shop now",
+        "button_link": "",
         "color_scheme": ""
       }
     },
