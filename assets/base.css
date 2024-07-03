@@ -3085,7 +3085,7 @@ details[open] .modal-overlay::after {
 }
 
 .header-icons__left {
-  grid-area: icons;
+  grid-area: left-icons;
 }
 
 .header-promo__text {
