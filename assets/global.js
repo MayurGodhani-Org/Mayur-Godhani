@@ -1325,8 +1325,6 @@ class QuickVariantSelects extends HTMLElement {
     this.addEventListener('change', () => {
       this.getSelectedOptions();
       this.getCurrentVariant();
-
-      console.log(this.getCurrentVariant());
     });
 
     this.selects = this.querySelectorAll('.quick-view__option-select');
@@ -1356,6 +1354,10 @@ class QuickVariantSelects extends HTMLElement {
     const variantsData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
     return variantsData.find((variant) => variant.options.every((option, index) => this.options[index] == option));
   }
+
+  validateOptions() {
+    
+  }
 }
 
 customElements.define('quick-variant-selects', QuickVariantSelects);
@@ -1371,7 +1373,7 @@ class QuickProductForm extends HTMLElement {
   }
 
   onAddCartClicked() {
-    
+    const variant = this.variantSelects.getCurrentVariant();
   }
 }
 
