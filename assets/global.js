@@ -1321,9 +1321,13 @@ class QuickProductForm extends HTMLElement {
   constructor() {
     super();
 
+    this.addButton = this.querySelector('.quick-view__form-addcart')
+    this.addButton?.addEventListener('click', this.onAddCartClicked.bind(this));
   }
 
-  
+  onAddCartClicked() {
+    console.log('add cart clicked');
+  }
 }
 
 customElements.define('quick-product-form', QuickProductForm);
