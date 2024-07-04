@@ -73,12 +73,7 @@
                 {{ 'product-' | append: index | placeholder_svg_tag: 'placeholder' }}
               {%- endif -%}
             </div>
-            <div class="lookbook-item__view-button">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="icon">
-                <path d="M11.3457 7.04175V15.5033" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-                <path d="M7.11523 11.2725H15.5768" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-              </svg>
-            </div>
+            {%- render 'quick-view', product: product -%}
           </div>
         </div>
       {%- endfor -%}
