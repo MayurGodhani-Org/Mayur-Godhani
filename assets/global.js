@@ -1328,7 +1328,7 @@ class QuickVariantSelects extends HTMLElement {
   }
 
   getSelectedOptions() {
-    return Array.from(this.querySelectorAll('input')).map((input) => input.checked && input.value);
+    return Array.from(this.querySelectorAll('input:checked')).map((input) => input.value);
   }
 
   getCurrentVariant() {
