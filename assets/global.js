@@ -1277,13 +1277,14 @@ class QuickView extends HTMLElement {
     this.modal = this.querySelector('.quick-view__modal-wrapper');
   }
 
-  open() {
+  openModal() {
     document.body.classList.add('.quick-view--opened');
     this.modal.classList.add('open');
   }
 
   renderInfo() {
     console.log('renderInfo');
+    this.openModal();
   }
 }
 
