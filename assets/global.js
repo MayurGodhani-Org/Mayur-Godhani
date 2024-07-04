@@ -1395,6 +1395,9 @@ class QuickProductForm extends HTMLElement {
       return;
     }
 
+    this.addButton.classList.add('loading');
+    this.addButton.classList.setAttribute('disabled', true);
+
     let formData = {
      'items': [{
         'id': variant.id,
@@ -1411,10 +1414,16 @@ class QuickProductForm extends HTMLElement {
     })
     .then(response => response.json())
     .then(response => {
+      this.addButton.classList.remove('loading');
+      this.addButton.classList.removeAttribute('disabled');
+      
       window.location = '/cart';
     })
     .catch((error) => {
       console.error('Error:', error);
+
+      this.addButton.classList.remove('loading');
+      this.addButton.classList.removeAttribute('disabled');
     });
   }
 }
