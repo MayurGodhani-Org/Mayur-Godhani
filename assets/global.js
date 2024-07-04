@@ -1328,14 +1328,12 @@ class QuickVariantSelects extends HTMLElement {
   }
 
   getSelectedOptions() {
-    return Array.from(this.querySelectorAll('input:checked')).map((input) => input.value);
+    this.options =  Array.from(this.querySelectorAll('input:checked')).map((input) => input.value);
   }
 
   getCurrentVariant() {
     const variantsData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
-    return variantsData.find((variant) => {
-      console.log(variant);
-    })
+    return variantsData.find((variant) => variant.options.every((option, index) => this.options[index] == option));
   }
 }
 
