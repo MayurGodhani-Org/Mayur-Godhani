@@ -1336,7 +1336,13 @@ class QuickVariantSelects extends HTMLElement {
         select.classList.toggle('open');
       });
 
-      const selectOptions = select.querySelector('.quick-view__option-select-label');
+      const selectOptions = select.querySelectorAll('.quick-view__options-input');
+      selectOptions.forEach((option) => {
+        option.addEventListener('change', () => {
+          select.classList.remove('open');
+          selectLabel.textContent = option.value;
+        });
+      });
     });
   }
 
