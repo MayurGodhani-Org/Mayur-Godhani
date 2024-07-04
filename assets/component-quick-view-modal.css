@@ -243,7 +243,7 @@
   width: 12rem;
   height: 14rem;
   flex-shrink: 0;
-  margin-right: 0.8rem;
+  margin-right: 1rem;
 }
 
 .quick-view__skeleton-details {
@@ -252,6 +252,6 @@
 
 .quick-view__skeleton-line {
   width: 100%;
-  height: 19px;
+  height: 40px;
   margin: 10px 0;
 }
