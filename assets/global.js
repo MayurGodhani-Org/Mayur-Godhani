@@ -1347,13 +1347,13 @@ class QuickVariantSelects extends HTMLElement {
   }
 
   getSelectedOptions() {
-    this.options =  Array.from(this.querySelectorAll('input:checked')).map((input) => input.value) || [];
+    this.options =  Array.from(this.querySelectorAll('input:checked')).map((input) => input.value);
   }
 
   getCurrentVariant() {
     console.log(this.options);
     const variantsData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
-    return variantsData.find((variant) => variant.options.every((option, index) => this.options[index] && this.options[index] == option));
+    return variantsData.find((variant) => variant.options.every((option, index) => this.options && this.options[index] == option));
   }
 
   validateOptions() {
