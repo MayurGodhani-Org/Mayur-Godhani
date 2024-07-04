@@ -1316,3 +1316,14 @@ class QuickView extends HTMLElement {
 }
 
 customElements.define('quick-view', QuickView);
+
+class QuickProductForm extends HTMLElement {
+  constructor() {
+    super();
+
+  }
+
+  
+}
+
+customElements.define('quick-product-form', QuickProductForm);
