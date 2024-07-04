@@ -1,3 +1,40 @@
+.quick-view__toggle {
+  position: absolute;
+  top: calc(var(--spacing-top) - 0.8rem);
+  left: calc(var(--spacing-left) - 0.8rem);
+  width: 3.2rem;
+  height: 3.2rem;
+  background: rgba(248, 248, 248, 0.9);
+  border-radius: 1.1rem;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);
+  animation: pulse 1.5s infinite;
+  transition: all 0.3s ease;
+  user-select: none;
+  cursor: pointer;
+}
+
+.quick-view__toggle:hover {
+  transform: rotate(180deg);
+}
+
+.quick-view__toggle .icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
 .quick-view--opened {
   overflow: hidden;
 }
