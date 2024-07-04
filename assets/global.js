@@ -1293,7 +1293,7 @@ class QuickView extends HTMLElement {
   renderInfo() {
     this.openModal();
 
-    
+    fetch(this.modal.dataset.url)
   }
 }
 
