@@ -1278,6 +1278,9 @@ class QuickView extends HTMLElement {
     this.close?.addEventListener('click', this.closeModal.bind(this));
 
     this.modal = this.querySelector('.quick-view__modal-wrapper');
+    this.modalContent = this.querySelector('.quick-view__modal-content');
+    
+    this.skeleton = this.querySelector('.quick-view__skeleton');
   }
 
   openModal() {
@@ -1299,8 +1302,9 @@ class QuickView extends HTMLElement {
         console.log('response', responseText)
         const html = new DOMParser().parseFromString(responseText, 'text/html');
 
+        this.skeleton.classList.add('hidden');
         
-        console.log(this.modal);
+        this.modalContent.innerHTML = html.querySelector('.quick-view__modal-content').innerHTML;
       })
       .catch((error) => {
         console.log('error', error);
