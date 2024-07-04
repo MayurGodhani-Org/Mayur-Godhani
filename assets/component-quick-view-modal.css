@@ -233,7 +233,6 @@
 }
 
 .quick-view__option-select-list {
-  display: none;
   position: absolute;
   top: 100%;
   left: -1px;
