@@ -1369,6 +1369,7 @@ class QuickVariantSelects extends HTMLElement {
   }
 
   hideErrors(event) {
+    console.log(event.target);
     const option = event.target.closest('.quick-view__product-option');
     const error = option?.querySelector('.quick-view__option-error');
     if (error) error.classList.remove('hidden');
