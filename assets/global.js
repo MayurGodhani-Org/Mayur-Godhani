@@ -1328,6 +1328,13 @@ class QuickVariantSelects extends HTMLElement {
 
       console.log(this.getCurrentVariant());
     });
+
+    this.selects = this.querySelectorAll('.quick-view__option-select');
+    this.selects.forEach((select) => {
+      select?.addEventListener('click', () => {
+        select.classList.toggle('open');
+      });
+    });
   }
 
   getSelectedOptions() {
