@@ -1332,7 +1332,10 @@ class QuickVariantSelects extends HTMLElement {
   }
 
   getCurrentVariant() {
-    console.log(this.getSelectedOptions());
+    const variantsData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
+    return variantsData.find((variant) => {
+      console.log(variant);
+    })
   }
 }
 
@@ -1347,7 +1350,7 @@ class QuickProductForm extends HTMLElement {
   }
 
   onAddCartClicked() {
-    console.log('add cart clicked');
+    
   }
 }
 
