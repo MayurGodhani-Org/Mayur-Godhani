@@ -291,11 +291,21 @@
   border: 2px solid currentColor;
   border-left-color: transparent;
   border-radius: 50%;
+  animation: loading 1s linear infinite;
 }
 
 .quick-view__form-addcart .text {
   margin-left: auto;
   margin-right: auto;
+}
+
+@keyframes laoding {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)  
+  }
 }
 
 /* skeleton text */
