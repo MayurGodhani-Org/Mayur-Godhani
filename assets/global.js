@@ -1380,6 +1380,10 @@ class QuickProductForm extends HTMLElement {
 
   onAddCartClicked() {
     const variant = this.variantSelects.getCurrentVariant();
+
+    if (!variant) {
+      this.variantSelects.validateOptions();
+    }
   }
 }
 
