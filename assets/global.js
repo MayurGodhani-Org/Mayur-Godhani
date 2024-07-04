@@ -1323,6 +1323,7 @@ class QuickVariantSelects extends HTMLElement {
 
   connectedCallback() {
     this.addEventListener('change', () => {
+      this.getSelectedOptions();
       this.getCurrentVariant();
     });
   }
