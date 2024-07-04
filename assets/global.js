@@ -1356,7 +1356,13 @@ class QuickVariantSelects extends HTMLElement {
   }
 
   validateOptions() {
-    
+    const options = this.querySelectorAll('.quick-view__product-option');
+    options.forEach((option) => {
+      const inputChecked = option.querySelectorAll('input:checked');
+      if (inputChecked.legnth) return;
+
+      console.log(inputChecked.legnth);
+    });
   }
 }
 
