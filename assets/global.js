@@ -1302,7 +1302,6 @@ class QuickView extends HTMLElement {
     fetch(this.modal.dataset.url)
       .then(response => response.text())
       .then(responseText => {
-        console.log('response', responseText)
         const html = new DOMParser().parseFromString(responseText, 'text/html');
 
         this.modalContent.innerHTML = html.querySelector('.quick-view__modal-content').innerHTML;
