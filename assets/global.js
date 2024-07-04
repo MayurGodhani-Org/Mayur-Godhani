@@ -1362,7 +1362,7 @@ class QuickVariantSelects extends HTMLElement {
       const inputChecked = option.querySelectorAll('input:checked');
       if (inputChecked.length) return;
 
-      const error = option.querySlector('.quick-view__option-error');
+      const error = option.querySelector('.quick-view__option-error');
       if (error) error.classList.remove('hidden');
     });
   }
