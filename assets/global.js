@@ -1392,7 +1392,30 @@ class QuickProductForm extends HTMLElement {
 
     if (!variant) {
       this.variantSelects.validateOptions();
+      return;
     }
+
+    let formData = {
+     'items': [{
+        'id': variant.id,
+        'quantity': 1
+      }]
+    };
+    
+    fetch(window.Shopify.routes.root + 'cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(response => {
+      window.location = '/cart';
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
   }
 }
 
