@@ -1334,7 +1334,7 @@ class QuickVariantSelects extends HTMLElement {
 
   getCurrentVariant() {
     const variantsData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
-    return variantsData.find((variant) => variant.options.every((option, index) => this.options[index] == option);
+    return variantsData.find((variant) => variant.options.every((option, index) => this.options[index] == option));
   }
 }
 
