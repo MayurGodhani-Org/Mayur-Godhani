@@ -1366,6 +1366,8 @@ class QuickProductForm extends HTMLElement {
 
     this.addButton = this.querySelector('.quick-view__form-addcart')
     this.addButton?.addEventListener('click', this.onAddCartClicked.bind(this));
+
+    this.variantSelects = this.querySelector('quick-variant-selects');
   }
 
   onAddCartClicked() {
