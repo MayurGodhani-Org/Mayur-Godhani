@@ -1268,16 +1268,15 @@ if (!customElements.get('bulk-add')) {
 }
 
 class QuickView extends HTMLElement {
-  static observedAttributes = ['data-product-url'];
-
   constructor() {
     super();
+
+    this.toggle = this.querySelector('.quick-view__toggle');
+    this.toggle?.addEventListener('click', this.renderInfo.bind(this));
   }
 
-  attributeChangedCallback(name, oldValue, newValue) {
-    console.log(
-      `Attribute ${name} has changed from ${oldValue} to ${newValue}.`,
-    );
+  renderInfo() {
+    console.log('renderInfo');
   }
 }
 
