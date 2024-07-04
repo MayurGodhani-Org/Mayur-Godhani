@@ -1325,6 +1325,8 @@ class QuickVariantSelects extends HTMLElement {
     this.addEventListener('change', () => {
       this.getSelectedOptions();
       this.getCurrentVariant();
+
+      console.log(this.getCurrentVariant());
     });
   }
 
