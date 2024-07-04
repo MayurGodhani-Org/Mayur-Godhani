@@ -1396,7 +1396,7 @@ class QuickProductForm extends HTMLElement {
     }
 
     this.addButton.classList.add('loading');
-    this.addButton.classList.setAttribute('disabled', true);
+    this.addButton.setAttribute('disabled', true);
 
     let formData = {
      'items': [{
@@ -1415,7 +1415,7 @@ class QuickProductForm extends HTMLElement {
     .then(response => response.json())
     .then(response => {
       this.addButton.classList.remove('loading');
-      this.addButton.classList.removeAttribute('disabled');
+      this.addButton.removeAttribute('disabled');
       
       window.location = '/cart';
     })
