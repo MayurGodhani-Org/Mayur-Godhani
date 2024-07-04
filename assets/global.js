@@ -1266,3 +1266,19 @@ class BulkAdd extends HTMLElement {
 if (!customElements.get('bulk-add')) {
   customElements.define('bulk-add', BulkAdd);
 }
+
+class QuickViewModal extends HTMLElement {
+  static observedAttributes = ['data-url'];
+
+  constructor() {
+    super();
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    console.log(
+      `Attribute ${name} has changed from ${oldValue} to ${newValue}.`,
+    );
+  }
+}
+
+customElements.define('quick-view-modal', QuickViewModal);
