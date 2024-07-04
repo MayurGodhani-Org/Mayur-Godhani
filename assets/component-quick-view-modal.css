@@ -263,6 +263,12 @@
   color: #FFF;
 }
 
+.quick-view__option-error {
+  font-size: 1.4rem;
+  color: red;
+  margin-top: 0.5rem;
+}
+
 .quick-view__form-buttons {
   margin-top: 5rem;
 }
