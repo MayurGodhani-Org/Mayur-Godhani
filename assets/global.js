@@ -1268,7 +1268,7 @@ if (!customElements.get('bulk-add')) {
 }
 
 class QuickViewModal extends HTMLElement {
-  static observedAttributes = ['data-url'];
+  static observedAttributes = ['data-product-url'];
 
   constructor() {
     super();
