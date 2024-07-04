@@ -1294,6 +1294,14 @@ class QuickView extends HTMLElement {
     this.openModal();
 
     fetch(this.modal.dataset.url)
+      .then(response => response.text())
+      .then(response => {
+        console.log('response', response)
+      })
+      .catch((error) => {
+        console.log('error', error);
+      });
+    
   }
 }
 
