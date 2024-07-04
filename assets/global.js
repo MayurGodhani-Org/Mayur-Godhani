@@ -1316,6 +1316,20 @@ class QuickView extends HTMLElement {
 
 customElements.define('quick-view', QuickView);
 
+class QuickVariantSelects extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.addEventListener('change', () => {
+      
+    });
+  }
+}
+
+customElements.define('quick-variant-selects', QuickVariantSelects);
+
 class QuickProductForm extends HTMLElement {
   constructor() {
     super();
