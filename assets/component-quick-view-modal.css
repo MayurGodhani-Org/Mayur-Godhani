@@ -265,3 +265,14 @@
 .skeleton-product__desc {
   height: 6rem;
 }
+
+.skeleton-product__label {
+  width: 7rem;
+  height: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.skeleton-product__input {
+  height: 4rem;
+  margin-bottom: 1.2rem;
+}
