@@ -288,7 +288,7 @@
   left: 0;
   width: 2rem;
   height: 2rem;
-  border: 2px solid currentColor;
+  border: 2px solid rgb(var(--color-button-text));
   border-left-color: transparent;
   border-radius: 50%;
   animation: loading 1s linear infinite;
