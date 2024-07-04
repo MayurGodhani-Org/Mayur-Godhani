@@ -1323,7 +1323,6 @@ class QuickVariantSelects extends HTMLElement {
 
   connectedCallback() {
     this.addEventListener('change', (event) => {
-      this.getSelectedOptions();
       this.getCurrentVariant();
       this.hideError(event);
     });
@@ -1352,7 +1351,8 @@ class QuickVariantSelects extends HTMLElement {
   }
 
   getCurrentVariant() {
-    console.log(this.options);
+    this.getSelectedOptions();
+    
     const variantsData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
     return variantsData.find((variant) => variant.options.every((option, index) => this.options && this.options[index] == option));
   }
