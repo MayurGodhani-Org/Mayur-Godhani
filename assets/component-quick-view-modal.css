@@ -42,7 +42,7 @@
   overflow: hidden;
 }
 
-.quick-view__modal-wrapper.modal-open {
+.quick-view__modal-wrapper.open {
   opacity: 1;
   visibility: visible;
 }

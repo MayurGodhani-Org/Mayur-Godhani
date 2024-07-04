@@ -1273,6 +1273,13 @@ class QuickView extends HTMLElement {
 
     this.toggle = this.querySelector('.quick-view__toggle');
     this.toggle?.addEventListener('click', this.renderInfo.bind(this));
+
+    this.modal = this.querySelector('.quick-view__modal-wrapper');
+  }
+
+  open() {
+    document.body.classList.add('.quick-view--opened');
+    this.modal.classList.add('open');
   }
 
   renderInfo() {
