@@ -10,63 +10,37 @@
         <path d="M5.03784 13.4285L13.5231 4.94325" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
       </svg>
     </button>
-    <div class="quick-view__product">
-      <div class="quick-view__product-image media">
-        {{ product.featured_media.preview_image | image_url: width: 240 | image_tag: loading: 'lazy' }}
-      </div>
-      <div class="quick-view__product-details">
-        <h2 class="quick-view__product-title">{{ product.title }}</h2>
-        <div class="quick-view__product-price">
-          <span>{{ current_variant.price | money }}</span>
-          {%- if current_variant.compare_at_price > current_variant.price -%}
-            <s>{{ current_variant.compare_at_price | money }}</s>
+    <div class="quick-view__modal-content">
+      <div class="quick-view__product">
+        <div class="quick-view__product-image media">
+          {{ product.featured_media.preview_image | image_url: width: 240 | image_tag: loading: 'lazy' }}
+        </div>
+        <div class="quick-view__product-details">
+          <h2 class="quick-view__product-title">{{ product.title }}</h2>
+          <div class="quick-view__product-price">
+            <span>{{ current_variant.price | money }}</span>
+            {%- if current_variant.compare_at_price > current_variant.price -%}
+              <s>{{ current_variant.compare_at_price | money }}</s>
+            {%- endif -%}
+          </div>
+          {%- if product.description != blank -%}
+            <div class="quick-view__product-desc rte">
+              {{ product.description }}
+            </div>
           {%- endif -%}
         </div>
-        {%- if product.description != blank -%}
-          <div class="quick-view__product-desc rte">
-            {{ product.description }}
-          </div>
-        {%- endif -%}
       </div>
-    </div>
-    <quick-product-form class="quick-view__product-form">
-      {%- unless product.has_only_default_variant -%}
-        <quick-variant-selects class="quick-view__product-options">
-          {%- for option in product.options_with_values -%}
-            {%- assign option_name_downcase = option.name | downcase -%}
-            {%- if option_name_downcase contains 'color' or option_name_downcase contains 'colour' -%}
-              <fieldset class="quick-view__product-option">
-                <legend class="quick-view__option-name">{{ option.name }}</legend>
-                <div class="quick-view__option-colors">
-                  {%- for value in option.values -%}
-                    {%- capture input_id -%}{{ option.name | handleize }}-{{ section.id }}-{{ forloop.index }}{%- endcapture -%}
-                    <input 
-                      type="radio"
-                      name="{{ option.name }}"
-                      id="{{ input_id }}"
-                      class="quick-view__options-input visually-hidden"
-                      value="{{ value }}"
-                    >
-                    <label for="{{ input_id }}">
-                      <span class="color" style="background-color: {{ value }};"></span>
-                      <span class="text">{{ value }}</span>
-                    </label>
-                  {%- endfor -%}
-                </div>
-              </fieldset>
-            {%- else -%}
-              <div class="quick-view__product-option">
-                <div class="quick-view__option-name">{{ option.name }}</div>
-                <div class="quick-view__option-select">
-                  <div class="quick-view__option-select-label">Choose your size</div>
-                  <div class="quick-view__option-select-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
-                      <path d="M2 2L8 8L14 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
-                    </svg>
-                  </div>
-                  <div class="quick-view__option-select-list">
+      <quick-product-form class="quick-view__product-form">
+        {%- unless product.has_only_default_variant -%}
+          <quick-variant-selects class="quick-view__product-options">
+            {%- for option in product.options_with_values -%}
+              {%- assign option_name_downcase = option.name | downcase -%}
+              {%- if option_name_downcase contains 'color' or option_name_downcase contains 'colour' -%}
+                <fieldset class="quick-view__product-option">
+                  <legend class="quick-view__option-name">{{ option.name }}</legend>
+                  <div class="quick-view__option-colors">
                     {%- for value in option.values -%}
-                    {%- capture input_id -%}{{ option.name | handleize }}-{{ section.id }}-{{ forloop.index }}{%- endcapture -%}
+                      {%- capture input_id -%}{{ option.name | handleize }}-{{ section.id }}-{{ forloop.index }}{%- endcapture -%}
                       <input 
                         type="radio"
                         name="{{ option.name }}"
@@ -75,27 +49,55 @@
                         value="{{ value }}"
                       >
                       <label for="{{ input_id }}">
-                        {{- value -}}
+                        <span class="color" style="background-color: {{ value }};"></span>
+                        <span class="text">{{ value }}</span>
                       </label>
                     {%- endfor -%}
                   </div>
+                </fieldset>
+              {%- else -%}
+                <div class="quick-view__product-option">
+                  <div class="quick-view__option-name">{{ option.name }}</div>
+                  <div class="quick-view__option-select">
+                    <div class="quick-view__option-select-label">Choose your size</div>
+                    <div class="quick-view__option-select-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                        <path d="M2 2L8 8L14 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"></path>
+                      </svg>
+                    </div>
+                    <div class="quick-view__option-select-list">
+                      {%- for value in option.values -%}
+                      {%- capture input_id -%}{{ option.name | handleize }}-{{ section.id }}-{{ forloop.index }}{%- endcapture -%}
+                        <input 
+                          type="radio"
+                          name="{{ option.name }}"
+                          id="{{ input_id }}"
+                          class="quick-view__options-input visually-hidden"
+                          value="{{ value }}"
+                        >
+                        <label for="{{ input_id }}">
+                          {{- value -}}
+                        </label>
+                      {%- endfor -%}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            {%- endif -%}
-          {%- endfor -%}
-        </quick-variant-selects>
-      {%- endunless -%}
-
-      <div class="quick-view__form-buttons">
-        <button 
-          type="submit"
-          class="quick-view__form-addcart button button--full-width button--with-arrow"
-        >
-          <span class="text">{{ 'products.product.add_to_cart' | t }}</span>
-          {%- render 'icon-arrow-long' -%}
-        </button>
-      </div>
-    </quick-product-form>
+              {%- endif -%}
+            {%- endfor -%}
+          </quick-variant-selects>
+        {%- endunless -%}
+  
+        <div class="quick-view__form-buttons">
+          <button 
+            type="submit"
+            class="quick-view__form-addcart button button--full-width button--with-arrow"
+          >
+            <span class="text">{{ 'products.product.add_to_cart' | t }}</span>
+            {%- render 'icon-arrow-long' -%}
+          </button>
+        </div>
+      </quick-product-form>
+    </div>
   </div>
 </div>
 
