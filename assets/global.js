@@ -1366,6 +1366,11 @@ class QuickVariantSelects extends HTMLElement {
       if (error) error.classList.remove('hidden');
     });
   }
+
+  hideErrors(option) {
+    const error = option?.querySelector('.quick-view__option-error');
+    if (error) error.classList.remove('hidden');
+  }
 }
 
 customElements.define('quick-variant-selects', QuickVariantSelects);
