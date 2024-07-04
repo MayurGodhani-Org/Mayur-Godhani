@@ -45,11 +45,11 @@
   position: relative;
 }
 
-.lookbook-item__media:hover .lookbook-item__view-button {
+.lookbook-item__media:hover .quick-view__toggle {
   animation-play-state: running;
 }
 
-.lookbook-item__view-button {
+.lookbook-item__media .quick-view__toggle {
   position: absolute;
   top: calc(var(--spacing-top) - 0.8rem);
   left: calc(var(--spacing-left) - 0.8rem);
@@ -67,7 +67,7 @@
     width: calc(33.3333333% - var(--grid-gap) * 2 / 3);
   }
 
-  .lookbook-item__view-button {
+  .lookbook-item__media .quick-view__toggle {
     top: calc(var(--spacing-top) - 1.1rem);
     left: calc(var(--spacing-left) - 1.1rem);
     width: 2.2rem;
