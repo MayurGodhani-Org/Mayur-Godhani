@@ -1322,9 +1322,10 @@ class QuickVariantSelects extends HTMLElement {
   }
 
   connectedCallback() {
-    this.addEventListener('change', () => {
+    this.addEventListener('change', (event) => {
       this.getSelectedOptions();
       this.getCurrentVariant();
+      this.hideErrors(event);
     });
 
     this.selects = this.querySelectorAll('.quick-view__option-select');
@@ -1367,7 +1368,8 @@ class QuickVariantSelects extends HTMLElement {
     });
   }
 
-  hideErrors(option) {
+  hideErrors(event) {
+    const option = event.target.closest('.quick-view__product-option');
     const error = option?.querySelector('.quick-view__option-error');
     if (error) error.classList.remove('hidden');
   }
