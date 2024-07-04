@@ -1340,6 +1340,8 @@ class QuickVariantSelects extends HTMLElement {
       selectOptions.forEach((option) => {
         option.addEventListener('change', () => {
           select.classList.remove('open');
+          
+          selectLabel.classList.add('center');
           selectLabel.textContent = option.value;
         });
       });
