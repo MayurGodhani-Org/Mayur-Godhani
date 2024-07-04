@@ -1325,7 +1325,7 @@ class QuickVariantSelects extends HTMLElement {
     this.addEventListener('change', (event) => {
       this.getSelectedOptions();
       this.getCurrentVariant();
-      this.hideErrors(event);
+      this.hideError(event);
     });
 
     this.selects = this.querySelectorAll('.quick-view__option-select');
@@ -1368,7 +1368,7 @@ class QuickVariantSelects extends HTMLElement {
     });
   }
 
-  hideErrors(event) {
+  hideError(event) {
     const option = event.target.closest('.quick-view__product-option');
     const error = option?.querySelector('.quick-view__option-error');
     if (error) error.classList.add('hidden');
