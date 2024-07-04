@@ -1337,7 +1337,7 @@ class QuickVariantSelects extends HTMLElement {
 
       const selectOptions = select.querySelectorAll('.quick-view__options-input');
       selectOptions.forEach((option) => {
-        option.addEventListener('change', () => {
+        option.addEventListener('click', () => {
           select.classList.remove('open');
           
           selectLabel.classList.add('center');
