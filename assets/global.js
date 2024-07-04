@@ -1295,8 +1295,11 @@ class QuickView extends HTMLElement {
 
     fetch(this.modal.dataset.url)
       .then(response => response.text())
-      .then(response => {
+      .then(responseText => {
         console.log('response', response)
+        const html = new DOMParser().parseFromString(responseText, 'text/html');
+
+        console.log(html);
       })
       .catch((error) => {
         console.log('error', error);
