@@ -1292,6 +1292,8 @@ class QuickView extends HTMLElement {
 
   renderInfo() {
     this.openModal();
+
+    
   }
 }
 
