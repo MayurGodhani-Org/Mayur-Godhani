@@ -1352,7 +1352,7 @@ class QuickVariantSelects extends HTMLElement {
 
   getCurrentVariant() {
     const variantsData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
-    return variantsData.find((variant) => variant.options.every((option, index) => this.options[index] == option).includes(false));
+    return variantsData.find((variant) => variant.options.every((option, index) => this.options[index] == option));
   }
 
   validateOptions() {
