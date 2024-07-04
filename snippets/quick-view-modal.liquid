@@ -1,26 +1,34 @@
-<quick-view-modal class="quick-view__modal-wrapper" data-product-url="">
-  <div class="quick-view__modal">
-    <button class="quick-view__modal-close">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-        <path d="M5.03784 4.94354L13.5231 13.4288" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-        <path d="M5.03784 13.4285L13.5231 4.94325" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-      </svg>
-    </button>
-    <div class="quick-view__skeleton">
-      <div class="skeleton-product">
-        <div class="skeleton-product__image skeleton"> </div>
-        <div class="skeleton-product__details">
-          <div class="skeleton-product__title skeleton"> </div>
-          <div class="skeleton-product__price skeleton"> </div>
-          <div class="skeleton-product__desc skeleton"> </div>
+<quick-view class="quick-view">
+  <button type="button" class="quick-view__toggle">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="icon">
+      <path d="M11.3457 7.04175V15.5033" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+      <path d="M7.11523 11.2725H15.5768" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+    </svg>
+  </button>
+  <div class="quick-view__modal-wrapper" data-product-url="{{ product.url }}?view=quick-view">
+    <div class="quick-view__modal">
+      <button class="quick-view__modal-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M5.03784 4.94354L13.5231 13.4288" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+          <path d="M5.03784 13.4285L13.5231 4.94325" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+        </svg>
+      </button>
+      <div class="quick-view__skeleton">
+        <div class="skeleton-product">
+          <div class="skeleton-product__image skeleton"> </div>
+          <div class="skeleton-product__details">
+            <div class="skeleton-product__title skeleton"> </div>
+            <div class="skeleton-product__price skeleton"> </div>
+            <div class="skeleton-product__desc skeleton"> </div>
+          </div>
         </div>
+        <div class="skeleton-product__label skeleton"> </div>
+        <div class="skeleton-product__input skeleton"> </div>
+        <div class="skeleton-product__label skeleton"> </div>
+        <div class="skeleton-product__input skeleton"> </div>
+        <div class="skeleton-product__button skeleton"> </div>
       </div>
-      <div class="skeleton-product__label skeleton"> </div>
-      <div class="skeleton-product__input skeleton"> </div>
-      <div class="skeleton-product__label skeleton"> </div>
-      <div class="skeleton-product__input skeleton"> </div>
-      <div class="skeleton-product__button skeleton"> </div>
+      <div class="quick-view__modal-content"></div>
     </div>
-    <div class="quick-view__modal-content"></div>
   </div>
-</quick-view-modal>
+</quick-view>
