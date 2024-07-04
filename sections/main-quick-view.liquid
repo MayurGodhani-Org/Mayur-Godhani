@@ -54,6 +54,7 @@
                       </label>
                     {%- endfor -%}
                   </div>
+                  <div class="quick-view__option-error hide">Please choose your {{ option_name_downcase }}</div>
                 </fieldset>
               {%- else -%}
                 <div class="quick-view__product-option">
@@ -81,6 +82,7 @@
                       {%- endfor -%}
                     </div>
                   </div>
+                  <div class="quick-view__option-error hide">Please choose your {{ option_name_downcase }}</div>
                 </div>
               {%- endif -%}
             {%- endfor -%}
