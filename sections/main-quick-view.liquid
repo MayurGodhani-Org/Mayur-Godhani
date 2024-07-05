@@ -17,7 +17,7 @@
         </div>
         <div class="quick-view__product-details">
           <h2 class="quick-view__product-title">{{ product.title }}</h2>
-          <div class="quick-view__product-price">
+          <div class="quick-view__product-price" id="Price-{{ section.id }}">
             <span>{{ current_variant.price | money }}</span>
             {%- if current_variant.compare_at_price > current_variant.price -%}
               <s>{{ current_variant.compare_at_price | money }}</s>
@@ -32,7 +32,7 @@
       </div>
       <quick-product-form class="quick-view__product-form">
         {%- unless product.has_only_default_variant -%}
-          <quick-variant-selects class="quick-view__product-options">
+          <quick-variant-selects class="quick-view__product-options" data-section="{{ section.id }}">
             {%- for option in product.options_with_values -%}
               {%- assign option_name_downcase = option.name | downcase -%}
               {%- if option_name_downcase contains 'color' or option_name_downcase contains 'colour' -%}
