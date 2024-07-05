@@ -159,6 +159,7 @@
   margin: 0 0 1.1rem;
   border: 0;
   position: relative;
+  z-index: 1;
 }
 
 .quick-view__option-name {
