@@ -1467,9 +1467,10 @@ class QuickProductForm extends HTMLElement {
 
     const freeGiftDataEle = document.getElementById('FreeGiftProduct');
     const freeGiftData = JSON.parse(freeGiftDataEle?.textContent || '[]');
-    
-    console.log(freeGiftData, freeGiftData.length);
 
+    const freeGift = freeGiftData.find((freeGiftVariant) => freeGiftVariant.options.every((option, index) => variant.options && variant.options[index] == option))
+
+    console.log(freeGift);
     return;
 
     let formData = {
