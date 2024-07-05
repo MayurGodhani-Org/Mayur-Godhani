@@ -477,4 +477,9 @@
   .quick-view__product-option {
     margin-bottom: 0.763888889vw;
   }
+
+  .quick-view__option-name {
+    font-size: 0.972222222vw;
+    margin-bottom: 0.416666667vw;
+  }
 }
