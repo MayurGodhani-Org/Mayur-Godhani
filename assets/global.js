@@ -1370,8 +1370,7 @@ class QuickVariantSelects extends HTMLElement {
     this.addEventListener('change', (event) => {
       const variant = this.getCurrentVariant();
 
-      this.closest('quick-product-form').updateButton(variant);
-
+      this.updateButton(variant);
       this.updatePrice(variant);
       this.hideError(event);
     });
