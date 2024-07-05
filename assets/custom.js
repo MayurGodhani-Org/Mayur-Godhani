@@ -197,3 +197,11 @@ class QuickProductForm extends HTMLElement {
 }
 
 customElements.define('quick-product-form', QuickProductForm);
+
+const menuDrawer = document.getElementById('MenuDrawer'),
+      menuDrawerToggle = document.querySelector('.menu-drawer__toggle');
+
+menuDrawerToggle?.addEventListener('click', () => {
+  menuDrawerToggle.classList.toggle('active');
+  document.body.classList.toggle('menu-drawer--opened');
+});
