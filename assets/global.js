@@ -1488,6 +1488,8 @@ class QuickProductForm extends HTMLElement {
       this.addButton.classList.remove('loading');
       this.addButton.removeAttribute('disabled');
 
+      console.log(response);
+
       if (response.status) {
         const error = this.querySelector('.quick-view__form-error');
         if (error) {
