@@ -1412,7 +1412,7 @@ class QuickVariantSelects extends HTMLElement {
 
     console.log(variant, price);
 
-    price.innnerHTML = `<span>${Shopify.formatMoney(variant.price, Shopify.money_format)}</span>
+    price.innerHTML = `<span>${Shopify.formatMoney(variant.price, Shopify.money_format)}</span>
                         ${(variant.compare_at_price > variant.price) ? `<s>${Shopify.formatMoney(variant.compare_at_price, Shopify.money_format)}</s>` : ''}`;
   }
 
