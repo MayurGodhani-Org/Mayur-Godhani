@@ -503,4 +503,9 @@
     font-size: 1.11111111vw;
     padding: 0.902777778vw 4.86111111vw 0.694444444vw 0.833333333vw;
   }
+
+  .quick-view__option-select-arrow {
+    width: 3.75vw;
+    border-left-width: 0.0694444444vw;
+  }
 }
