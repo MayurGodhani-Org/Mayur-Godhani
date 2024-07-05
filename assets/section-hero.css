@@ -144,6 +144,10 @@
     max-width: 29.609375vw;
   }
 
+  .hero-text__container > * {
+    margin-bottom: 3.059375vw;
+  }
+
   .hero-title {
     font-size: 4.29114583vw;
   }
