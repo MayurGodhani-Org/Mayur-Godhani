@@ -3187,6 +3187,10 @@ details[open] .modal-overlay::after {
     --logo-width: 10.546875vw;
   }
 
+  .header-promo__text {
+    font-size: 1.11119792vw;
+  }
+
   .header-buttons .button {
     min-height: 3.05546875vw;
     font-size: 1.11119792vw;
