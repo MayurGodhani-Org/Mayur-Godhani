@@ -3173,6 +3173,10 @@ details[open] .modal-overlay::after {
 }
 
 @media screen and (min-width: 1600px) {
+  .header-wrapper {
+    padding: 0.69453125vw 0;
+  }
+  
   .header.page-width {
     max-width: 100%;
     padding-right: 9.78046875vw;
