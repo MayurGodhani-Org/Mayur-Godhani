@@ -30,6 +30,12 @@
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .lookbooks-heading {
+    font-size: 2.206875vw;
+  }
+}
+
 .lookbook-grid {
   --grid-gap: 0.4rem;
   display: flex;
