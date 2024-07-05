@@ -31,8 +31,14 @@
 }
 
 @media screen and (min-width: 1600px) {
+  .lookbooks .page-width {
+    padding-left: 12.9578125vw;
+    padding-right: 12.9578125vw;
+  }
+  
   .lookbooks-heading {
     font-size: 2.206875vw;
+    margin-bottom: 1.87500vw;
   }
 }
 
