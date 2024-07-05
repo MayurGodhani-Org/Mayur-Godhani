@@ -49,7 +49,7 @@
   animation-play-state: running;
 }
 
-.lookbook-item__media .media:before {
+.lookbook-item__media > .media:before {
   content: '';
   display: block;
   padding-bottom: 110.307692%;
@@ -73,7 +73,7 @@
     width: calc(33.3333333% - var(--grid-gap) * 2 / 3);
   }
 
-  .lookbook-item__media .media:before {
+  .lookbook-item__media > .media:before {
     padding-bottom: 102.540416%;
   }
 
