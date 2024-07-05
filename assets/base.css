@@ -3171,6 +3171,14 @@ details[open] .modal-overlay::after {
   }
 }
 
+.menu-drawer--opened .header-wrapper {
+  box-shadow: 0px 2px 4px 0px #00000026;
+}
+
+.menu-drawer--opened .menu-drawer {
+  transform: translateY(0);
+}
+
 .menu-drawer {
   position: absolute;
   top: 100%;
