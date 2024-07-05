@@ -482,4 +482,8 @@
     font-size: 0.972222222vw;
     margin-bottom: 0.416666667vw;
   }
+
+  .quick-view__option-colors {
+    border-wdith: 0.0694444444vw;
+  }
 }
