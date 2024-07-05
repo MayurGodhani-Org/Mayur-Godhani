@@ -3253,6 +3253,7 @@ details[open] .modal-overlay::after {
 
 @media screen and (min-width: 1600px) {
   .promotional-text {
+    --page-width: 100%;
     font-size: 1.11119792vw;
     padding: 0.69453125vw 0;
   }
