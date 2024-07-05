@@ -1490,14 +1490,14 @@ class QuickProductForm extends HTMLElement {
 
       console.log(response);
 
-      if (response.ok) {
-        window.location = '/cart';
-      } else {
+      if (!response.status) {
         const error = this.querySelector('.quick-view__form-error');
         if (error) {
           error.textContent = response.description;
           setTimeout(() => { error.textContent = '' }, 3000);
         }
+      } else {
+        window.location = '/cart';
       }
     })
     .catch((error) => {
