@@ -140,6 +140,11 @@
   margin-bottom: 1.2rem;
 }
 
+.quick-view__product-price s {
+  color: #959595;
+  margin-left: 0.5rem;
+}
+
 .quick-view__product-desc {
   max-height: 4.28571428em;
   font-size: 1.4rem;
