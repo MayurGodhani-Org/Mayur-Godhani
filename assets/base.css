@@ -3192,12 +3192,13 @@ details[open] .modal-overlay::after {
 
   .header-buttons .button .text {
     margin-left: 1.43229167vw;
-    margin-right: 0.9375vw;
+    margin-right: 1.19791667vw;
   }
 
   .header-buttons .button .icon {
     width: 1.796875vw;
     height: auto;
+    margin-left: 0;
   }
 }
 
