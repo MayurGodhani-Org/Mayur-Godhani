@@ -3251,6 +3251,13 @@ details[open] .modal-overlay::after {
   text-align: center;
 }
 
+@media screen and (min-width: 1600px) {
+  .promotional-text {
+    font-size: 1.11119792vw;
+    padding: 0.69453125vw 0;
+  }
+}
+
 .skeleton {
   background-color: #e2e5e7;
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
