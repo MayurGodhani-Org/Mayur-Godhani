@@ -102,4 +102,11 @@
   .lookbook-grid {
     --grid-gap: 1.10625vw;
   }
+
+  .lookbook-item__media .quick-view__toggle {
+    top: calc(var(--spacing-top) - 0.60846354vw);
+    left: calc(var(--spacing-left) - 0.60846354vw);
+    width: 1.21692708vw;
+    height: 1.21692708vw;
+  }
 }
