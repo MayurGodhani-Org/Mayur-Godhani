@@ -122,7 +122,7 @@ class QuickVariantSelects extends HTMLElement {
 
   hideError(event) {
     const option = event.target.closest('.quick-view__product-option');
-    setTimeout(() =>{ option?.classList.remove('not-checked') }, 300);
+    setTimeout(() =>{ option?.classList.remove('not-selected') }, 300);
     
     
     const error = option?.querySelector('.quick-view__option-error');
