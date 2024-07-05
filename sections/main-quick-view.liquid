@@ -31,7 +31,7 @@
         {%- for option in product.options_with_values -%}
           {%- assign option_name_downcase = option.name | downcase -%}
           {%- if option_name_downcase contains 'color' or option_name_downcase contains 'colour' -%}
-            <fieldset class="quick-view__product-option">
+            <fieldset class="quick-view__product-option not-checked">
               <legend class="quick-view__option-name">{{ option.name }}</legend>
               <div class="quick-view__option-colors">
                 {%- for value in option.values -%}
@@ -52,7 +52,7 @@
               <div class="quick-view__option-error hidden">Please select a {{ option_name_downcase }}</div>
             </fieldset>
           {%- else -%}
-            <div class="quick-view__product-option">
+            <div class="quick-view__product-option not-checked">
               <div class="quick-view__option-name">{{ option.name }}</div>
               <div class="quick-view__option-select">
                 <div class="quick-view__option-select-label">Choose your size</div>
