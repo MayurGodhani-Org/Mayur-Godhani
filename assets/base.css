@@ -3238,12 +3238,12 @@ details[open] .modal-overlay::after {
 }
 
 .menu-drawer .button {
-  padding-left: 2.5rem;
+  padding-left: 3.9rem;
   padding-right: 2.5rem;
 }
 
 .menu-drawer .button .text {
-  min-width: 13.8rem;
+  min-width: 13.9rem;
 }
 
 /* promotional-text */
