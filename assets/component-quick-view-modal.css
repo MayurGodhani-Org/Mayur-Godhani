@@ -246,7 +246,7 @@
 .quick-view__option-colors label .color {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -1px;
   bottom: 0;
   width: 0.6rem;
   border-right: 1px solid rgb(var(--color-foreground));
