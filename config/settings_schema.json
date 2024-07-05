@@ -1484,6 +1484,11 @@
         "type": "product",
         "id": "gift_product",
         "label": "Product"
+      },
+      {
+        "type": "product",
+        "id": "gift_product_options",
+        "label": "Product options"
       }
     ]
   }
