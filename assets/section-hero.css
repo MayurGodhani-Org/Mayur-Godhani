@@ -140,6 +140,15 @@
     padding: 5.70416667vw 9.79166667vw;
   }
 
+  .hero-text__container {
+    max-width: 29.609375vw;
+  }
+
+  .hero-content {
+    font-size: 1.22604167vw;
+    line-height: 1.39995752;
+  }
+
   .hero-button {
     min-height: 3.06510417vw;
     font-size: 0.980729167vw;
