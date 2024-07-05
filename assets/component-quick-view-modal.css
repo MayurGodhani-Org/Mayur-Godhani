@@ -438,4 +438,9 @@
     max-width: 21.5972222vw;
     padding: 2.5vw 1.38888889vw 1.73611111vw;
   }
+
+  .quick-view__product-image {
+    width: 8.33333333vw;
+    margin-right: 0.555555556vw;
+  }
 }
