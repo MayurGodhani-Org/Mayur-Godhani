@@ -211,6 +211,7 @@
 .quick-view__option-select.open .quick-view__option-select-list {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .quick-view__option-select.open .quick-view__option-select-arrow svg {
@@ -254,6 +255,7 @@
   background: #FFF;
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transition: 0.3s ease;
   border: 1px solid rgb(var(--color-foreground));
   overflow: hidden auto;
