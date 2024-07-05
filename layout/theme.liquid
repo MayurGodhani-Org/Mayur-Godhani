@@ -353,7 +353,7 @@
       };
     </script>
 
-    {%- if settings.gift_product -%}
+    {%- if settings.gift_product != empty -%}
       <script type="application/json" id="FreeGiftProduct">
         {{ settings.gift_product.variants | json }}
       </script>
