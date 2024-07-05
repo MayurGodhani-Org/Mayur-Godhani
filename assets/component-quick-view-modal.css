@@ -201,7 +201,7 @@
   inset: 0;
   transform: translateX(100%);
   background: #000;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s linear;
 }
 
 .not-selected .quick-view__option-colors label:before {
