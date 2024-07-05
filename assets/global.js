@@ -1474,7 +1474,8 @@ class QuickProductForm extends HTMLElement {
     if (freeGiftDataEle) {
       const freeGiftData = JSON.parse(freeGiftDataEle.textContent);
       const freeGift = freeGiftData.find((freeGiftVariant) => freeGiftVariant.options.every((option, index) => variant.options && variant.options[index] == option)) || freeGiftData[0];
-      if (freeGift) items.push({ 'id': freeGift.id, 'quantity': 1 })
+      
+      if (freeGift && freeGift.id !== variant.id) items.push({ 'id': freeGift.id, 'quantity': 1 })
     }
     
     fetch(window.Shopify.routes.root + 'cart/add.js', {
