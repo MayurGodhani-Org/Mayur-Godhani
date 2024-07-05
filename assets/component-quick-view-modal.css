@@ -208,12 +208,9 @@
   opacity: 0;
 }
 
-.not-checked .quick-view__option-colors input:checked + label:before {
-  opacity: 1;
-}
-
 .quick-view__option-colors input:checked + label:before {
   transform: translateX(0);
+  opacity: 1;
 }
 
 .quick-view__option-colors input:checked + label ~ label:before {
