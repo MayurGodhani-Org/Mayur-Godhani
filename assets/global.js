@@ -1416,6 +1416,19 @@ class QuickVariantSelects extends HTMLElement {
                         ${(variant.compare_at_price > variant.price) ? `<s>${Shopify.formatMoney(variant.compare_at_price, Shopify.money_format)}</s>` : ''}`;
   }
 
+  updateButton(variant) {
+    const button = document.getElementById(`QuickAdd-${this.dataset.section}`);
+    if (!variant || !button) return;
+
+    if (variant.available) {
+      button.removeAttribute('disabled');
+      button.querySelector('.text').textContent = window.variantStrings.addToCart;
+    } else {
+      button.add('disabled');
+      button.querySelector('.text').textContent = window.variantStrings.soldOut;
+    }
+  }
+
   validateOptions() {
     const options = this.querySelectorAll('.quick-view__product-option');
     options.forEach((option) => {
@@ -1483,7 +1496,7 @@ class QuickProductForm extends HTMLElement {
       } else {
         const error = this.querySelector('.quick-view__form-error');
         if (error) {
-          error.textContent = response.message;
+          error.textContent = response.description;
           setTimeout(() => { error.textContent = '' }, 3000);
         }
       }
@@ -1494,18 +1507,6 @@ class QuickProductForm extends HTMLElement {
       this.addButton.classList.remove('loading');
       this.addButton.removeAttribute('disabled');
     });
-  }
-
-  updateButton(variant) {
-    if (!variant) return;
-
-    if (variant.available) {
-      this.addButton.removeAttribute('disabled');
-      this.addButton.querySelector('.text').textContent = window.variantStrings.addToCart;
-    } else {
-      this.addButton.add('disabled');
-      this.addButton.querySelector('.text').textContent = window.variantStrings.soldOut;
-    }
   }
 }
 
