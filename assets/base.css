@@ -3178,6 +3178,8 @@ details[open] .modal-overlay::after {
   width: 100%;
   padding: 2.5rem 1.5rem;
   text-align: center;
+  transform: translateY(-100%);
+  transition: all 0.3s;
 }
 
 .menu-drawer .header-promo__text {
