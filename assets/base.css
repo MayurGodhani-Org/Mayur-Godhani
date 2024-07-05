@@ -1247,6 +1247,18 @@ button.shopify-payment-button__button--unbranded {
   opacity: 1;
 }
 
+.button:disabled::hover,
+.shopify-challenge__button:disabled:hover,
+.customer button:disabled:hover {
+  color: rgb(var(--color-button-text));
+}
+
+.button:disabled:after,
+.shopify-challenge__button:disabled:after,
+.customer button:disabled:after {
+  display: none;
+}
+
 .button:focus-visible,
 .button:focus,
 .button.focused,
@@ -1312,8 +1324,6 @@ button.shopify-payment-button__button--unbranded {
 .customer button[aria-disabled='true'],
 .customer button.disabled,
 .quantity__button.disabled {
-  background-color: rgba(var(--color-button),var(--alpha-button-background));
-  color: rgb(var(--color-button-text));
   cursor: not-allowed;
   opacity: 0.5;
 }
