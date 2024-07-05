@@ -1476,8 +1476,15 @@ class QuickProductForm extends HTMLElement {
       this.addButton.classList.remove('loading');
       this.addButton.removeAttribute('disabled');
 
-      console.log(response);
-      if (response.ok) window.location = '/cart';
+      if (response.ok) {
+        window.location = '/cart';
+      } else {
+        const error = this.querySelector('.quick-view__form-error');
+        if (error) {
+          error.textContent = response.message;
+          setTimeout(() => { error.textContent = '' }, 3000);
+        }
+      }
     })
     .catch((error) => {
       console.error('Error:', error);
