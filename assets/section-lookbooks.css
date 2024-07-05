@@ -18,7 +18,7 @@
   .lookbooks-heading {
     font-size: calc(var(--font-heading-scale) * 3.6rem);
     line-height: 1.19444444;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     text-align: left;
   }
 }
