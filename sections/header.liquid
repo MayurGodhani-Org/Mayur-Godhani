@@ -38,6 +38,18 @@
   </header>
 </div>
 
+<div class="header-drawer">
+  {%- if section.settings.promotion_text != blank -%}
+    <div class="header-promo__text center small-hide">
+      {{- section.settings.promotion_text -}}
+    </div>
+  {%- endif -%}
+  <a href="{{ section.settings.button_link }}" class="button button--with-arrow">
+    <span class="text">{{ section.settings.button_label }}</span>
+    {%- render 'icon-arrow-long' -%}
+  </a>
+</div>
+
 {% schema %}
 {
   "name": "Header",
