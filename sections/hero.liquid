@@ -38,8 +38,13 @@
         <h2 class="hero-title">{{ section.settings.heading }}</h2>
       {%- endif -%}
       {%- if section.settings.text != blank -%}
-        <div class="hero-content rte">
+        <div class="hero-content rte{% if section.settings.text_mobile != blank %} small-hide{% endif %}">
           {{ section.settings.text }}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.text_mobile != blank -%}
+        <div class="hero-content rte medium-hide large-up-hide">
+          {{ section.settings.text_mobile }}
         </div>
       {%- endif -%}
       {%- if section.settings.button_label != blank -%}
@@ -83,6 +88,12 @@
       "id": "text",
       "label": "Text",
       "default": "<p>Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "text_mobile",
+      "label": "Mobile text",
+      "default": "<p>Discover Joy: Your Ultimate Holiday Gift Destination.</p>"
     },
     {
       "type": "text",
