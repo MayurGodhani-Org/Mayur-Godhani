@@ -32,7 +32,10 @@
       </div>
       <quick-product-form class="quick-view__product-form">
         {%- unless product.has_only_default_variant -%}
-          <quick-variant-selects class="quick-view__product-options" data-section="{{ section.id }}">
+          <quick-variant-selects 
+            class="quick-view__product-options" 
+            data-section="{{ section.id }}"
+          >
             {%- for option in product.options_with_values -%}
               {%- assign option_name_downcase = option.name | downcase -%}
               {%- if option_name_downcase contains 'color' or option_name_downcase contains 'colour' -%}
