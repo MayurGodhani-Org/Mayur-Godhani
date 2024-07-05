@@ -1465,7 +1465,7 @@ class QuickProductForm extends HTMLElement {
     this.addButton.classList.add('loading');
     this.addButton.setAttribute('disabled', true);
 
-    const freeGiftData = JSON.parse(document.getElementById('FreeGiftProduct').textContent || '[]');
+    const freeGiftData = JSON.parse(document.getElementById('hgh').textContent || '[]');
     console.log(freeGiftData, freeGiftData.length);
 
     return;
