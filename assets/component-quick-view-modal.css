@@ -439,6 +439,18 @@
     padding: 2.5vw 1.38888889vw 1.73611111vw;
   }
 
+  .quick-view__modal-close {
+    top: 0.347222222vw;
+    right: 0.555555556vw;
+    width: 2.22222222vw;
+    height: 2.22222222vw;
+  }
+
+  .quick-view__modal-close svg {
+    width: 1.25vw;
+    height: 1.25vw;
+  }
+
   .quick-view__product-image {
     width: 8.33333333vw;
     margin-right: 0.555555556vw;
