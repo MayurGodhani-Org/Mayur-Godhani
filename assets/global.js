@@ -1356,7 +1356,6 @@ class QuickView extends HTMLElement {
       .catch((error) => {
         console.log('error', error);
       });
-    
   }
 }
 
@@ -1408,7 +1407,10 @@ class QuickVariantSelects extends HTMLElement {
   }
 
   updatePrice(variant) {
-    Shopify.formatMoney(2000, Shopify.money_format);
+    const price = this.getElementById(`Price-${this.dataset.section}`);
+    if (!variant && !price) return;
+
+    price.innnerHTML = `<span>${Shopify.formatMoney(variant.price, Shopify.money_format)}</span>`
   }
 
   validateOptions() {
