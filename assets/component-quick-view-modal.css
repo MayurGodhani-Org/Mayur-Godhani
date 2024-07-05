@@ -508,4 +508,9 @@
     width: 3.75vw;
     border-left-width: 0.0694444444vw;
   }
+
+  .quick-view__option-select-arrow svg {
+    width: 1.11111111vw;
+    height: auto;
+  }
 }
