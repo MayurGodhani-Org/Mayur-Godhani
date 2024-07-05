@@ -33,6 +33,10 @@
   line-height: 1.3125;
 }
 
+.hero-button {
+  min-height: calc(4.3rem + var(--buttons-border-width) * 2);
+}
+
 .hero-button .text {
   min-width: 11.7rem;
 }
