@@ -492,4 +492,10 @@
     padding: 0.694444444vw 1.04166667vw 0.763888889vw;
     border-left-width: 0.0694444444vw;
   }
+
+  .quick-view__option-colors label .color {
+    left: -0.0694444444vw;
+    width: 0.416666667vw;
+    border-right-width: 0.0694444444vw;
+  }
 }
