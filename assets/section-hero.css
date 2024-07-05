@@ -151,4 +151,10 @@
     min-width: 8.33333333vw;
     margin-left: 0.520833333vw;
   }
+
+  .hero-button .icon {
+    width: 1.66666667vw;
+    height: auto;
+    margin-left: 0.260416667vw;
+  }
 }
