@@ -342,6 +342,7 @@
 }
 
 .quick-view__form-addcart {
+  min-height: calc(4.3rem + var(--buttons-border-width)* 2);
   padding: 0 2.9rem 0 5.9rem;
 }
 
