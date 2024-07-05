@@ -175,7 +175,6 @@
 }
 
 .quick-view__option-colors input:checked + label {
-  background: #000;
   color: #FFF;
 }
 
