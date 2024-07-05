@@ -523,6 +523,10 @@
     padding: 0.694444444vw 1.11111111vw;
   }
 
+  .quick-view__form-buttons {
+    margin-top: 3.47222222vw;
+  }
+
   .quick-view__form-addcart {
     min-height: 3.12500vw;
     font-size: 1.11111111vw;
