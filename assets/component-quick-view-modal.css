@@ -432,3 +432,10 @@
   height: 4.5rem;
   margin-top: 5rem;
 }
+
+@media screen and (min-width: 1600px) {
+  .quick-view__modal {
+    max-width: 21.5972222vw;
+    padding: 2.5vw 1.38888889vw 1.73611111vw;
+  }
+}
