@@ -44,7 +44,11 @@
                     value="{{ value }}"
                   >
                   <label for="{{ input_id }}">
-                    <span class="color" style="background-color: {{ value }};"></span>
+                    {%- assign value_handleize = value | handleize -%}
+                    <span 
+                      class="color" 
+                      style="background-color: {{ value }};background-image: url({{ value_handleize | append: '.png' | file_url }})"
+                    ></span>
                     <span class="text">
                       <span class="text-default">{{ value }}</span>
                       <span class="text-active">{{ value }}</span>
