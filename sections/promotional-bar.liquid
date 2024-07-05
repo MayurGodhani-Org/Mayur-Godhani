@@ -1,7 +1,14 @@
 {% if section.settings.text != blank %}
   <div class="promotional-text color-{{ section.settings.color_scheme }}">
     <div class="page-width">
-      {{ section.settings.text }}
+      <span class="{% if section.settings.text_mobile != blank %}small-hide{% endif %}">
+        {{ section.settings.text }}
+      </span>
+      {%- if section.settings.text_mobile != blank -%}
+        <span class="medium-hide large-up-hide">
+          {{ section.settings.text }}
+        </span>
+      {%- endif -%}
     </div>
   </div>
 {%- endif -%}
@@ -13,7 +20,13 @@
     {
       "type": "inline_richtext",
       "id": "text",
-      "label": "Text",
+      "label": "Desktop text",
+      "default": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text_mobile",
+      "label": "Mobile text",
       "default": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR"
     },
     {
