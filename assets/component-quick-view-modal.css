@@ -190,6 +190,23 @@
   cursor: pointer;
 }
 
+.quick-view__option-colors label:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(100%);
+  background: #000;
+  transition: all 0.3s;
+}
+
+.quick-view__option-colors input:checked + label:after {
+  transform: translateX(0);
+}
+
+.quick-view__option-colors input:checked + label ~ label:after {
+  transform: translateX(-100%);
+}
+
 .quick-view__option-colors label:first-of-type {
   border-left: 0;
 }
