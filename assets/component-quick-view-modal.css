@@ -227,6 +227,7 @@
 }
 
 .quick-view__option-colors label .text {
+  display: block;
   position: relative;
 }
 
