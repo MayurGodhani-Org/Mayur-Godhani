@@ -1325,7 +1325,7 @@ class QuickVariantSelects extends HTMLElement {
     this.addEventListener('change', (event) => {
       const variant = this.getCurrentVariant();
 
-      this.updateButton(variant);
+      this.closest('quick-product-form').updateButton(variant);
       this.hideError(event);
     });
 
@@ -1368,10 +1368,6 @@ class QuickVariantSelects extends HTMLElement {
       const error = option.querySelector('.quick-view__option-error');
       if (error) error.classList.remove('hidden');
     });
-  }
-
-  updateButton(variant) {
-    
   }
 
   hideError(event) {
