@@ -460,4 +460,9 @@
     font-size: 1.11111111vw;
     margin: 0.902777778vw 0 1.45833333vw;
   }
+
+  .quick-view__product-price {
+    font-size: 1.11111111vw;
+    margin-bottom: 0.763888889vw;
+  }
 }
