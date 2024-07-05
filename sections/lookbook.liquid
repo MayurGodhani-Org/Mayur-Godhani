@@ -20,6 +20,13 @@
       padding-bottom: {{ section.settings.bottom_padding_desktop }}px;
     }
   }
+
+  @media screen and (min-width: 1600px) {
+    .section-padding-{{ section.id }} {
+      padding-top: {{ section.settings.top_padding_desktop | divided_by: 1600 | times: 100.00 }}vw;
+      padding-bottom: {{ section.settings.top_padding_desktop | divided_by: 1600 | times: 100.00 }}vw;
+    }
+  }
 {%- endstyle -%}
 
 <div class="lookbooks color-{{ section.settings.color_scheme }}">
@@ -45,7 +52,7 @@
       
         <div class="lookbook-item lookbook-item-{{ block.id }}">
           <div class="lookbook-item__media">
-            <div class="media media--square">
+            <div class="media">
               {%- liquid
                 assign lookbook_product = block.settings.product
                 assign lookbook_image = lookbook_product.featured_media.preview_image
