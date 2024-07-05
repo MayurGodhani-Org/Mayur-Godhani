@@ -1490,7 +1490,7 @@ class QuickProductForm extends HTMLElement {
 
       console.log(response);
 
-      if (!response.status) {
+      if (response.status) {
         const error = this.querySelector('.quick-view__form-error');
         if (error) {
           error.textContent = response.description;
