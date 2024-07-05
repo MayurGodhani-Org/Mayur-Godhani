@@ -1465,27 +1465,25 @@ class QuickProductForm extends HTMLElement {
     this.addButton.classList.add('loading');
     this.addButton.setAttribute('disabled', true);
 
+    const items = [{
+        'id': variant.id,
+        'quantity': 1
+      }];
+
     const freeGiftDataEle = document.getElementById('FreeGiftProduct');
     const freeGiftData = JSON.parse(freeGiftDataEle?.textContent || '[]');
 
-    const freeGift = freeGiftData.find((freeGiftVariant) => freeGiftVariant.options.every((option, index) => variant.options && variant.options[index] == option))
-
-    console.log(freeGift);
+    const freeGift = freeGiftData.find((freeGiftVariant) => freeGiftVariant.options.every((option, index) => variant.options && variant.options[index] == option)) || freeGiftData[0];
+    if (freeGift) items.push({ 'id': freeGift.id, 'quantity': 1 })
+    console.log(items);
     return;
-
-    let formData = {
-     'items': [{
-        'id': variant.id,
-        'quantity': 1
-      }]
-    };
     
     fetch(window.Shopify.routes.root + 'cart/add.js', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(formData)
+      body: JSON.stringify({ 'items': items })
     })
     .then(response => response.json())
     .then(response => {
