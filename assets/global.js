@@ -1345,7 +1345,7 @@ class QuickView extends HTMLElement {
   renderInfo() {
     this.openModal();
 
-    fetch(this.modal.dataset.url)
+    fetch(`${this.modal.dataset.url}?section_id=main-quick-view`)
       .then(response => response.text())
       .then(responseText => {
         const html = new DOMParser().parseFromString(responseText, 'text/html');
