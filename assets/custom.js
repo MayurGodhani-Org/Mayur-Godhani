@@ -155,13 +155,10 @@ class QuickProductForm extends HTMLElement {
         'quantity': 1
       }];
 
-    const options = ['M', 'Black']
-    const enableFreeGift = variant.options.every((option) => options.includes(option));
-    
-    console.log(enableFreeGift);
-    return;
+    const enableFreeGift = variant.options.every((option) => window.gift_options.includes(option));
     const freeGiftDataEle = document.getElementById('FreeGiftProduct');
-    if (freeGiftDataEle) {
+    
+    if (enableFreeGift && freeGiftDataEle) {
       const freeGiftData = JSON.parse(freeGiftDataEle.textContent);
       const freeGift = freeGiftData.find((freeGiftVariant) => freeGiftVariant.options.every((option, index) => variant.options && variant.options[index] == option)) || freeGiftData[0];
       
