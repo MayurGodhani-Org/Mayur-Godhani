@@ -63,6 +63,11 @@
     min-height: calc(4.3rem + var(--buttons-border-width)* 2);
     padding: 0 1.9rem 0 2.1rem;
   }
+
+  .hero-button .icon {
+    width: 2.6rem;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 750px) {
