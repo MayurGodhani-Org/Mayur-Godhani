@@ -1471,8 +1471,8 @@ class QuickProductForm extends HTMLElement {
       }];
 
     const freeGiftDataEle = document.getElementById('FreeGiftProduct');
-    const freeGiftData = JSON.parse(freeGiftDataEle?.textContent || []);
-    if (freeGiftData.length) {
+    const freeGiftData = JSON.parse(freeGiftDataEle?.textContent);
+    if (freeGiftData) {
       const freeGift = freeGiftData.find((freeGiftVariant) => freeGiftVariant.options.every((option, index) => variant.options && variant.options[index] == option)) || freeGiftData[0];
       if (freeGift) items.push({ 'id': freeGift.id, 'quantity': 1 })
     }
