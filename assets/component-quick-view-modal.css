@@ -213,7 +213,7 @@
 .quick-view__option-colors input:checked + label:before {
   transform: translateX(0);
   opacity: 1;
-  transition: all 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 
 .quick-view__option-colors input:checked + label .text-default {
