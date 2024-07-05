@@ -3131,7 +3131,12 @@ details[open] .modal-overlay::after {
   appearance: none;
 }
 
-.menu-drawer__toggle .icon {
+.menu-drawer__toggle:not(.active) .icon-close,
+.menu-drawer__toggle.active .icon-hamburger {
+  opacity: 0;
+}
+
+.menu-drawer__toggle .icon-hamburger {
   width: 2rem;
   height: 2rem;
   display: block;
