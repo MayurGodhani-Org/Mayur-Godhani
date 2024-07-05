@@ -3182,6 +3182,23 @@ details[open] .modal-overlay::after {
     padding-right: 9.78046875vw;
     padding-left: 9.78046875vw;
   }
+
+  .header-buttons .button {
+    min-height: 3.05546875vw;
+    font-size: 1.11119792vw;
+    padding-left: 1.45833333vw;
+    padding-right: 1.45833333vw;
+  }
+
+  .header-buttons .button .text {
+    margin-left: 1.43229167vw;
+    margin-right: 0.9375vw;
+  }
+
+  .header-buttons .button .icon {
+    width: 1.796875vw;
+    height: auto;
+  }
 }
 
 .menu-drawer--opened .header-wrapper {
