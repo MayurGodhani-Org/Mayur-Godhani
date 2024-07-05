@@ -1475,6 +1475,15 @@
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
+      },
+      {
+        "type": "header",
+        "content": "Free gift product"
+      },
+      {
+        "type": "product",
+        "id": "gift_product",
+        "label": "gift_product"
       }
     ]
   }
