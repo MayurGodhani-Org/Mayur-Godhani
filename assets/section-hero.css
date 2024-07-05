@@ -139,4 +139,16 @@
     max-width: 100%;
     padding: 5.70416667vw 9.79166667vw;
   }
+
+  .hero-button {
+    min-height: 3.06510417vw;
+    font-size: 0.980729167vw;
+    padding-left: 1.35416667vw;
+    padding-right: 1.35416667vw;
+  }
+
+  .hero-button .text {
+    min-width: 8.33333333vw;
+    margin-left: 0.520833333vw;
+  }
 }
