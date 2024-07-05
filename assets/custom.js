@@ -158,8 +158,8 @@ class QuickProductForm extends HTMLElement {
     const options = ['M', 'Black']
     const enableFreeGift = variant.options.every((option) => options.includes(option));
     
-    console.log(options);
-    
+    console.log(enableFreeGift);
+    return;
     const freeGiftDataEle = document.getElementById('FreeGiftProduct');
     if (freeGiftDataEle) {
       const freeGiftData = JSON.parse(freeGiftDataEle.textContent);
