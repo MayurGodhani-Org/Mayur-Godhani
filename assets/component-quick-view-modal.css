@@ -194,7 +194,7 @@
   border-left: 0;
 }
 
-.quick-view__option-colors label:after {
+.quick-view__option-colors label:before {
   content: '';
   position: absolute;
   inset: 0;
@@ -203,11 +203,11 @@
   transition: all 0.3s;
 }
 
-.quick-view__option-colors input:checked + label:after {
+.quick-view__option-colors input:checked + label:before {
   transform: translateX(0);
 }
 
-.quick-view__option-colors input:checked + label ~ label:after {
+.quick-view__option-colors input:checked + label ~ label:before {
   transform: translateX(-100%);
 }
 
