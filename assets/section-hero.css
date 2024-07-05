@@ -144,6 +144,10 @@
     max-width: 29.609375vw;
   }
 
+  .hero-title {
+    font-size: 4.29114583vw;
+  }
+
   .hero-content {
     font-size: 1.22604167vw;
     line-height: 1.39995752;
