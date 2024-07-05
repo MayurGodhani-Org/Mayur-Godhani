@@ -213,12 +213,24 @@
   opacity: 1;
 }
 
+.quick-view__option-colors input:checked + label .text.active {
+  transform: translateX(0)
+}
+
 .quick-view__option-colors input:checked + label ~ label:before {
   transform: translateX(-100%);
 }
 
 .quick-view__option-colors label .text {
   position: relative;
+}
+
+.quick-view__option-colors label .text-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  transition: all 0.3s;
 }
 
 .quick-view__option-colors label .color {
