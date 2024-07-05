@@ -228,6 +228,7 @@
   bottom: 0;
   width: 0.6rem;
   border-right: 1px solid rgb(var(--color-foreground));
+  z-index: 1;
 }
 
 .quick-view__option-select {
