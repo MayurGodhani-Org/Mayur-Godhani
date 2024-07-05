@@ -3143,7 +3143,7 @@ details[open] .modal-overlay::after {
   display: block;
 }
 
-.menu-drawer__toggle:not(.active) .icon-close {
+.menu-drawer__toggle .icon-close {
   position: absolute;
   inset: 0;
   width: 1.5rem;
