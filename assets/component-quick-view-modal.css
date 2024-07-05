@@ -205,7 +205,6 @@
 }
 
 .not-selected .quick-view__option-colors label:before {
-  transform: translateX(0);
   opacity: 0;
   transition: none;
 }
