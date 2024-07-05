@@ -1,4 +1,4 @@
-Shopify.money_format = "${{amount}}";
+Shopify.money_format = window.moneyFormat || '${{ amount }}';
 
 Shopify.formatMoney = function(cents, format) {
   if (typeof cents == 'string') { cents = cents.replace('.',''); }
