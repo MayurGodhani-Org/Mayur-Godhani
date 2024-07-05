@@ -189,8 +189,8 @@
   cursor: pointer;
 }
 
-.quick-view__option-colors label .text {
-  position: relative;
+.quick-view__option-colors label:first-of-type {
+  border-left: 0;
 }
 
 .quick-view__option-colors label:after {
@@ -210,8 +210,8 @@
   transform: translateX(-100%);
 }
 
-.quick-view__option-colors label:first-of-type {
-  border-left: 0;
+.quick-view__option-colors label .text {
+  position: relative;
 }
 
 .quick-view__option-colors label .color {
