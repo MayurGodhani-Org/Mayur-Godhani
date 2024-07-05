@@ -455,4 +455,9 @@
     width: 8.33333333vw;
     margin-right: 0.555555556vw;
   }
+
+  .quick-view__product-title {
+    font-size: 1.11111111vw;
+    margin: 0.902777778vw 0 1.45833333vw;
+  }
 }
