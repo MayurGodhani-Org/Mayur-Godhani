@@ -1372,6 +1372,8 @@ class QuickVariantSelects extends HTMLElement {
       const variant = this.getCurrentVariant();
 
       this.closest('quick-product-form').updateButton(variant);
+
+      this.updatePrice(variant);
       this.hideError(event);
     });
 
@@ -1403,6 +1405,10 @@ class QuickVariantSelects extends HTMLElement {
     
     const variantsData = JSON.parse(this.querySelector('[type="application/json"]').textContent);
     return variantsData.find((variant) => variant.options.every((option, index) => this.options && this.options[index] == option));
+  }
+
+  updatePrice(variant) {
+    Shopify.formatMoney(2000, Shopify.money_format);
   }
 
   validateOptions() {
@@ -1473,10 +1479,6 @@ class QuickProductForm extends HTMLElement {
       this.addButton.classList.remove('loading');
       this.addButton.removeAttribute('disabled');
     });
-  }
-
-  updatePrice() {
-    
   }
 
   updateButton(variant) {
