@@ -1486,7 +1486,7 @@
         "label": "Product"
       },
       {
-        "type": "product",
+        "type": "text",
         "id": "gift_product_options",
         "label": "Product options"
       }
