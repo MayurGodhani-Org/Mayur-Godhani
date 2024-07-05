@@ -3162,6 +3162,15 @@ details[open] .modal-overlay::after {
   }
 }
 
+.menu-drawer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
 /* promotional-text */
 
 .promotional-text {
