@@ -559,37 +559,37 @@
   }
   
   .skeleton-product__image {
-    width: 12rem;
-    margin-right: 1.2rem;
+    width: 8.33333333vw;
+    margin-right: 0.833333333vw;
   }
   
   .skeleton-product__title {
-    height: 1.9rem;
-    margin: 1.3rem 0 1.7rem;
+    height: 1.31944444vw;
+    margin: 0.902777778vw 0 1.18055556vw;
   }
   
   .skeleton-product__price {
-    height: 1.9rem;
-    margin-bottom: 1.2rem;
+    height: 1.31944444vw;
+    margin-bottom: 0.833333333vw;
   }
   
   .skeleton-product__desc {
-    height: 6rem;
+    height: 4.16666667vw;
   }
   
   .skeleton-product__label {
-    width: 7rem;
-    height: 1.8rem;
-    margin-bottom: 0.6rem;
+    width: 4.86111111vw;
+    height: 1.25vw;
+    margin-bottom: 0.416666667vw;
   }
   
   .skeleton-product__input {
-    height: 4rem;
-    margin-bottom: 1.2rem;
+    height: 2.77777778vw;
+    margin-bottom: 0.833333333vw;
   }
   
   .skeleton-product__button {
-    height: 4.5rem;
-    margin-top: 5rem;
+    height: 3.12500vw;
+    margin-top: 3.47222222vw;
   }
 }
