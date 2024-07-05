@@ -293,6 +293,7 @@
 }
 
 .quick-view__option-select-arrow svg {
+  margin-left: 1px;
   transition: 0.3s ease;
 }
 
