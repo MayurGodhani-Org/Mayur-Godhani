@@ -3249,10 +3249,17 @@ details[open] .modal-overlay::after {
 /* promotional-text */
 
 .promotional-text {
-  font-size: 1.6rem;
-  line-height: 0.875;
+  font-size: 1.4rem;
+  line-height: 1;
   padding: 1rem 0;
   text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .promotional-text {
+    font-size: 1.6rem;
+    line-height: 0.875;
+  }
 }
 
 @media screen and (min-width: 1600px) {
