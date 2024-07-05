@@ -1407,7 +1407,7 @@ class QuickVariantSelects extends HTMLElement {
   }
 
   updatePrice(variant) {
-    const price = this.getElementById(`Price-${this.dataset.section}`);
+    const price = document.getElementById(`Price-${this.dataset.section}`);
     if (!variant && !price) return;
 
     price.innnerHTML = `<span>${Shopify.formatMoney(variant.price, Shopify.money_format)}</span>${(variant.compare_at_price > variant.price) && `${Shopify.formatMoney(variant.compare_at_price, Shopify.money_format)}`}`;
