@@ -1429,6 +1429,10 @@ class QuickProductForm extends HTMLElement {
     });
   }
 
+  updatePrice() {
+    
+  }
+
   updateButton(variant) {
     if (!variant) return;
 
