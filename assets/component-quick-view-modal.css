@@ -514,6 +514,10 @@
     height: auto;
   }
 
+  .quick-view__option-select-list {
+    max-height: 6.87500vw;
+  }
+
   .quick-view__option-select-list label {
     font-size: 1.11111111vw;
     padding: 0.694444444vw 1.11111111vw;
