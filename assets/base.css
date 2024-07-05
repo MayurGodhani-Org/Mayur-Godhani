@@ -3077,6 +3077,8 @@ details[open] .modal-overlay::after {
 .header-wrapper {
   --page-width: 144.2rem;
   padding: 1rem 0;
+  position: relative;
+  z-index: 1;
 }
 
 .header {
