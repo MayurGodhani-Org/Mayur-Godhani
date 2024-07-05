@@ -473,4 +473,8 @@
   .quick-view__product-desc {
     font-size: 0.972222222vw;
   }
+
+  .quick-view__product-option {
+    margin-bottom: 0.763888889vw;
+  }
 }
