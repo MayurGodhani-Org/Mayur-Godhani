@@ -33,10 +33,6 @@
   line-height: 1.3125;
 }
 
-.hero-button {
-  min-height: calc(4.3rem + var(--buttons-border-width) * 2);
-}
-
 .hero-button .text {
   min-width: 11.7rem;
 }
@@ -61,6 +57,11 @@
     right: 0;
     padding: 3.9rem 1.5rem;
     text-align: center;
+  }
+
+  .hero-button {
+    min-height: calc(4.3rem + var(--buttons-border-width)* 2);
+    padding: 0 1.9rem 0 2.1rem;
   }
 }
 
