@@ -3182,6 +3182,15 @@ details[open] .modal-overlay::after {
   margin-bottom: 1.6rem;
 }
 
+.menu-drawer .button {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.menu-drawer .button .text {
+  min-width: 13.8rem;
+}
+
 /* promotional-text */
 
 .promotional-text {
