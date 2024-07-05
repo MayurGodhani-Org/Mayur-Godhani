@@ -1423,7 +1423,7 @@ class QuickVariantSelects extends HTMLElement {
       button.removeAttribute('disabled');
       button.querySelector('.text').textContent = window.variantStrings.addToCart;
     } else {
-      button.add('disabled');
+      button.setAttribute('disabled', true);
       button.querySelector('.text').textContent = window.variantStrings.soldOut;
     }
   }
