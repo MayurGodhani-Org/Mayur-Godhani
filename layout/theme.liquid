@@ -353,6 +353,12 @@
       };
     </script>
 
+    {%- if settings.gift_product -%}
+      <script type="application/json" id="FreeGiftProduct">
+        {{ settings.gift_product.variants | json }}
+      </script>
+    {%- endif -%}
+
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
