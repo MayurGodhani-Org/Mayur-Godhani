@@ -451,6 +451,10 @@
     height: 1.25vw;
   }
 
+  .quick-view__product {
+    margin-bottom: 0.486111111vw;
+  }
+
   .quick-view__product-image {
     width: 8.33333333vw;
     margin-right: 0.555555556vw;
