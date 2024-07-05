@@ -1312,6 +1312,8 @@ button.shopify-payment-button__button--unbranded {
 .customer button[aria-disabled='true'],
 .customer button.disabled,
 .quantity__button.disabled {
+  background-color: rgba(var(--color-button),var(--alpha-button-background));
+  color: rgb(var(--color-button-text));
   cursor: not-allowed;
   opacity: 0.5;
 }
