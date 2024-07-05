@@ -498,4 +498,9 @@
     width: 0.416666667vw;
     border-right-width: 0.0694444444vw;
   }
+
+  .quick-view__option-select-label {
+    font-size: 1.11111111vw;
+    padding: 0.902777778vw 4.86111111vw 0.694444444vw 0.833333333vw;
+  }
 }
