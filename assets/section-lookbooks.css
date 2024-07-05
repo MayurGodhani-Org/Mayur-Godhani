@@ -32,6 +32,7 @@
 
 @media screen and (min-width: 1600px) {
   .lookbooks .page-width {
+    max-width: 100%;
     padding-left: 12.9578125vw;
     padding-right: 12.9578125vw;
   }
