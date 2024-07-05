@@ -465,4 +465,8 @@
     font-size: 1.11111111vw;
     margin-bottom: 0.763888889vw;
   }
+
+  .quick-view__product-desc {
+    font-size: 0.972222222vw;
+  }
 }
