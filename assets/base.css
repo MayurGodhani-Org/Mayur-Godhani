@@ -3077,7 +3077,7 @@ details[open] .modal-overlay::after {
 
 .header-wrapper {
   --page-width: 144.2rem;
-  padding: 1rem 0;
+  padding: 1.65rem 0;
   position: relative;
   z-index: 1;
 }
@@ -3166,6 +3166,10 @@ details[open] .modal-overlay::after {
 }
 
 @media screen and (min-width: 750px) {
+  .header-wrapper {
+    padding: 1rem 0;
+  }
+  
   .header {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: 'logo promo-text buttons';
