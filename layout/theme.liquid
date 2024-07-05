@@ -352,6 +352,8 @@
         recipientFormCollapsed: `{{ 'recipient.form.collapsed' | t }}`,
         countrySelectorSearchCount: `{{ 'localization.country_results_count' | t: count: '[count]' }}`,
       };
+
+      window.gift_options = {{ settings.product_options_value | split: ',' | json }};
     </script>
 
     {%- if settings.gift_product != empty -%}
