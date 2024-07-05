@@ -3126,6 +3126,7 @@ details[open] .modal-overlay::after {
   padding: 0;
   margin: 0;
   border: 0;
+  position: relative;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -3140,6 +3141,14 @@ details[open] .modal-overlay::after {
   width: 2rem;
   height: 2rem;
   display: block;
+}
+
+.menu-drawer__toggle:not(.active) .icon-close {
+  position: absolute;
+  inset: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: auto;
 }
 
 .header-promo__text {
