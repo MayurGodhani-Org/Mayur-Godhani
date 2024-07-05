@@ -133,3 +133,11 @@
     line-height: 1.4;
   }
 }
+
+@media screen and (min-width: 1600px) {
+  .hero-text {
+    max-width: 100%;
+    padding-left: 9.79166667vw;
+    padding-right: 9.79166667vw;
+  }
+}
