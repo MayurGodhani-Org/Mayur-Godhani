@@ -106,11 +106,12 @@
   .hero-button {
     min-width: 22rem;
     min-height: 5rem;
-    padding: 0 2.3rem;
+    padding: 0 2.2rem;
   }
   
   .hero-button .text {
-    min-width: 11rem;
+    min-width: 12rem;
+    margin-left: 1.6rem;
   }
 }
 
