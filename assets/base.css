@@ -3144,6 +3144,7 @@ details[open] .modal-overlay::after {
 }
 
 .header-promo__text {
+  line-height: 0.875;
   grid-area: promo-text;
 }
 
