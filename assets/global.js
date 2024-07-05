@@ -1475,8 +1475,6 @@ class QuickProductForm extends HTMLElement {
 
     const freeGift = freeGiftData.find((freeGiftVariant) => freeGiftVariant.options.every((option, index) => variant.options && variant.options[index] == option)) || freeGiftData[0];
     if (freeGift) items.push({ 'id': freeGift.id, 'quantity': 1 })
-    console.log(items);
-    return;
     
     fetch(window.Shopify.routes.root + 'cart/add.js', {
       method: 'POST',
