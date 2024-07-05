@@ -232,7 +232,6 @@
 
 .quick-view__option-colors label .text span {
   transition: all 0.3s;
-  position: relative;
 }
 
 .quick-view__option-colors label .text-active {
