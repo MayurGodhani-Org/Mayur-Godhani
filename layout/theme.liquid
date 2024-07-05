@@ -353,7 +353,7 @@
         countrySelectorSearchCount: `{{ 'localization.country_results_count' | t: count: '[count]' }}`,
       };
 
-      window.gift_options = {{ settings.product_options_value | split: ',' | json }};
+      window.gift_options = {{ settings.gift_product_options_value | split: ',' | json }};
     </script>
 
     {%- if settings.gift_product != empty -%}
