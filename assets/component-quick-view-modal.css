@@ -523,6 +523,12 @@
     padding: 0.694444444vw 1.11111111vw;
   }
 
+  .quick-view__option-error,
+  .quick-view__form-error {
+    font-size: 0.972222222vw;
+    margin-top: 0.694444444vw;
+  }
+
   .quick-view__form-buttons {
     margin-top: 3.47222222vw;
   }
