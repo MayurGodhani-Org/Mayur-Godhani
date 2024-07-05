@@ -1487,8 +1487,8 @@
       },
       {
         "type": "text",
-        "id": "gift_product_options",
-        "label": "Product options"
+        "id": "product_options_value",
+        "label": "Options value"
       }
     ]
   }
