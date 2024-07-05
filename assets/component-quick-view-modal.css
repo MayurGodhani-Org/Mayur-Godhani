@@ -204,12 +204,16 @@
   transition: all 0.3s linear;
 }
 
+.quick-view__option-colors input:checked + label:before {
+  transform: translateX(0);
+}
+
 .not-selected .quick-view__option-colors label:before {
   opacity: 0;
   transition: none;
 }
 
-.quick-view__option-colors input:checked + label:before {
+.not-selected .quick-view__option-colors input:checked + label:before {
   transform: translateX(0);
   opacity: 1;
   transition: opacity 0.3s ease-out;
