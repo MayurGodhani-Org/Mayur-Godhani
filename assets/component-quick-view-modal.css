@@ -276,7 +276,8 @@
   color: #FFF;
 }
 
-.quick-view__option-error {
+.quick-view__option-error,
+.quick-view__form-error {
   font-size: 1.4rem;
   color: red;
   margin-top: 0.5rem;
