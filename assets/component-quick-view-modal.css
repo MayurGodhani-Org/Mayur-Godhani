@@ -279,8 +279,9 @@
 .quick-view__option-error,
 .quick-view__form-error {
   font-size: 1.4rem;
+  line-height: 1.25;
   color: red;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .quick-view__form-buttons {
