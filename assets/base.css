@@ -3178,6 +3178,10 @@ details[open] .modal-overlay::after {
   text-align: center;
 }
 
+.menu-drawer .header-promo__text {
+  margin-bottom: 1.6rem;
+}
+
 /* promotional-text */
 
 .promotional-text {
