@@ -158,6 +158,7 @@
   padding: 0;
   margin: 0 0 1.1rem;
   border: 0;
+  position: relative;
 }
 
 .quick-view__option-name {
