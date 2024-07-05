@@ -1323,7 +1323,9 @@ class QuickVariantSelects extends HTMLElement {
 
   connectedCallback() {
     this.addEventListener('change', (event) => {
-      this.getCurrentVariant();
+      const variant = this.getCurrentVariant();
+
+      this.updateButton(variant);
       this.hideError(event);
     });
 
@@ -1366,6 +1368,10 @@ class QuickVariantSelects extends HTMLElement {
       const error = option.querySelector('.quick-view__option-error');
       if (error) error.classList.remove('hidden');
     });
+  }
+
+  updateButton(variant) {
+    
   }
 
   hideError(event) {
@@ -1423,8 +1429,20 @@ class QuickProductForm extends HTMLElement {
       console.error('Error:', error);
 
       this.addButton.classList.remove('loading');
-      this.addButton.classList.removeAttribute('disabled');
+      this.addButton.removeAttribute('disabled');
     });
+  }
+
+  updateButton(variant) {
+    if (!variant) return;
+
+    if (variant.available) {
+      this.addButton.removeAttribute('disabled');
+      this.addButton.querySelector('.text').textContent = window.variantStrings.addToCart;
+    } else {
+      this.addButton.add('disabled');
+      this.addButton.querySelector('.text').textContent = window.variantStrings.soldOut;
+    }
   }
 }
 
