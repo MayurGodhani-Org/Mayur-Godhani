@@ -45,14 +45,14 @@
   position: relative;
 }
 
-.lookbook-item__media:before {
+.lookbook-item__media:hover .quick-view__toggle {
+  animation-play-state: running;
+}
+
+.lookbook-item__media .media:before {
   content: '';
   display: block;
   padding-bottom: 110.307692%;
-}
-
-.lookbook-item__media:hover .quick-view__toggle {
-  animation-play-state: running;
 }
 
 .lookbook-item__media .quick-view__toggle {
@@ -73,7 +73,7 @@
     width: calc(33.3333333% - var(--grid-gap) * 2 / 3);
   }
 
-  .lookbook-item__media:before {
+  .lookbook-item__media .media:before {
     padding-bottom: 102.540416%;
   }
 
