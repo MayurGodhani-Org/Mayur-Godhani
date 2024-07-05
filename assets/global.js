@@ -1408,8 +1408,7 @@ class QuickVariantSelects extends HTMLElement {
 
   updatePrice(variant) {
     const price = document.getElementById(`Price-${this.dataset.section}`);
-    console.log(!variant && !price);
-    if (!variant && !price) return;
+    if (!variant || !price) return;
 
     console.log(variant, price);
 
