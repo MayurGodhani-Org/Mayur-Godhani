@@ -90,3 +90,9 @@
     height: 2.2rem;
   }
 }
+
+@media screen and (min-width: 1600px) {
+  .lookbook-grid {
+    --grid-gap: 1.10625vw;
+  }
+}
