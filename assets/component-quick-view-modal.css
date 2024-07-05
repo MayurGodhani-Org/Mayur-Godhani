@@ -189,6 +189,10 @@
   cursor: pointer;
 }
 
+.quick-view__option-colors label .text {
+  position: relative;
+}
+
 .quick-view__option-colors label:after {
   content: '';
   position: absolute;
