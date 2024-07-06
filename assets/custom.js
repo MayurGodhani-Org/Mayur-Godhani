@@ -102,10 +102,8 @@ class QuickVariantSelects extends HTMLElement {
     const button = document.getElementById(`QuickAdd-${this.dataset.section}`);
     if (!variant && !button) return;
 
-    const buttonText = variant.available ? window.variantStrings.addToCart : window.variantStrings.soldOut;
-    button.querySelector('.text').textContent = buttonText;
-
     button.disabled = !variant.available;
+    button.querySelector('.text').textContent = variant.available ? window.variantStrings.addToCart : window.variantStrings.soldOut;
   }
 
   validateOptions() {
