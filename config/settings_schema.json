@@ -72,6 +72,18 @@
           },
           {
             "type": "color",
+            "id": "button_hover",
+            "label": "Solid button background hover",
+            "default": "#FFF544"
+          },
+          {
+            "type": "color",
+            "id": "button_label_hover",
+            "label": "Solid button label hover",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
             "id": "secondary_button_label",
             "label": "t:settings_schema.colors.settings.secondary_button_label.label",
             "default": "#121212"
@@ -1463,6 +1475,20 @@
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
+      },
+      {
+        "type": "header",
+        "content": "Free gift product"
+      },
+      {
+        "type": "product",
+        "id": "gift_product",
+        "label": "Product"
+      },
+      {
+        "type": "text",
+        "id": "gift_product_options_value",
+        "label": "Options value"
       }
     ]
   }

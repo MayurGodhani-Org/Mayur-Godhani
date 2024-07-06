@@ -1,1 +1,135 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","settings":{"heading":"Browse our latest products","heading_size":"h0"}},"button":{"type":"buttons","settings":{"button_label_1":"Shop all","button_link_1":"shopify:\/\/collections\/all","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","button"],"settings":{"image_overlay_opacity":40,"image_height":"large","desktop_content_position":"bottom-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"scheme-3","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"featured_collection":{"type":"featured-collection","settings":{"title":"Featured products","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"all","products_to_show":8,"columns_desktop":4,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":false,"color_scheme":"scheme-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":false,"padding_top":44,"padding_bottom":36}}},"order":["image_banner","featured_collection"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "hero_6j4wth": {
+      "type": "hero",
+      "settings": {
+        "image_desktop_large": "shopify:\/\/shop_images\/hero-placeholder-large.svg",
+        "image_desktop": "shopify:\/\/shop_images\/hero-placeholder.svg",
+        "image_mobile": "shopify:\/\/shop_images\/hero-placeholder-mobile.svg",
+        "heading": "The Gift Guide",
+        "text": "<p>Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.<\/p>",
+        "text_mobile": "<p>Discover Joy: Your Ultimate Holiday Gift Destination.<\/p>",
+        "button_label": "Shop now",
+        "button_link": "shopify:\/\/collections\/all",
+        "color_scheme": ""
+      }
+    },
+    "promotional_bar_namxL3": {
+      "type": "promotional-bar",
+      "settings": {
+        "text": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
+        "text_mobile": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR",
+        "color_scheme": "scheme-2"
+      }
+    },
+    "lookbook_F3MCE6": {
+      "type": "lookbook",
+      "blocks": {
+        "block_zdLTnY": {
+          "type": "block",
+          "settings": {
+            "product": "black-leather-bag",
+            "position_top_desktop_large": 61,
+            "position_top_desktop": 57,
+            "position_top_mobile": 14,
+            "position_left_desktop_large": 53,
+            "position_left_desktop": 61,
+            "position_left_mobile": 65
+          }
+        },
+        "block_rbTVE8": {
+          "type": "block",
+          "settings": {
+            "product": "blue-silk-tuxedo",
+            "position_top_desktop_large": 53,
+            "position_top_desktop": 53,
+            "position_top_mobile": 14,
+            "position_left_desktop_large": 84,
+            "position_left_desktop": 84,
+            "position_left_mobile": 65
+          }
+        },
+        "block_69dKYM": {
+          "type": "block",
+          "settings": {
+            "product": "chequered-red-shirt",
+            "position_top_desktop_large": 21,
+            "position_top_desktop": 21,
+            "position_top_mobile": 14,
+            "position_left_desktop_large": 63,
+            "position_left_desktop": 62,
+            "position_left_mobile": 65
+          }
+        },
+        "block_zCTmAK": {
+          "type": "block",
+          "settings": {
+            "product": "classic-leather-jacket",
+            "position_top_desktop_large": 18,
+            "position_top_desktop": 18,
+            "position_top_mobile": 14,
+            "position_left_desktop_large": 72,
+            "position_left_desktop": 72,
+            "position_left_mobile": 65
+          }
+        },
+        "block_wwLeqB": {
+          "type": "block",
+          "settings": {
+            "product": "classic-varsity-top",
+            "position_top_desktop_large": 26,
+            "position_top_desktop": 26,
+            "position_top_mobile": 14,
+            "position_left_desktop_large": 51,
+            "position_left_desktop": 51,
+            "position_left_mobile": 65
+          }
+        },
+        "block_UGJYzz": {
+          "type": "block",
+          "settings": {
+            "product": "dark-denim-top",
+            "position_top_desktop_large": 61,
+            "position_top_desktop": 40,
+            "position_top_mobile": 14,
+            "position_left_desktop_large": 44,
+            "position_left_desktop": 76,
+            "position_left_mobile": 65
+          }
+        }
+      },
+      "block_order": [
+        "block_zdLTnY",
+        "block_rbTVE8",
+        "block_69dKYM",
+        "block_zCTmAK",
+        "block_wwLeqB",
+        "block_UGJYzz"
+      ],
+      "settings": {
+        "heading": "Tisso vison in the wild",
+        "color_scheme": "",
+        "top_padding_desktop": 90,
+        "top_padding_tablet": 60,
+        "top_padding_mobile": 40,
+        "bottom_padding_desktop": 52,
+        "bottom_padding_tablet": 52,
+        "bottom_padding_mobile": 24
+      }
+    }
+  },
+  "order": [
+    "hero_6j4wth",
+    "promotional_bar_namxL3",
+    "lookbook_F3MCE6"
+  ]
+}
