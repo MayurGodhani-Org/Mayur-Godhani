@@ -334,14 +334,7 @@ h4,
 
 h5,
 .h5 {
-  font-size: calc(var(--font-heading-scale) * 1.3rem);
-}
-
-@media only screen and (min-width: 750px) {
-  h5,
-  .h5 {
-    font-size: calc(var(--font-heading-scale) * 1.4rem);
-  }
+  font-size: calc(var(--font-heading-scale) * 1.4rem);
 }
 
 h6,
