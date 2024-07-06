@@ -50,10 +50,10 @@
           "type": "block",
           "settings": {
             "product": "blue-silk-tuxedo",
-            "position_top_desktop_large": 50,
+            "position_top_desktop_large": 53,
             "position_top_desktop": 53,
             "position_top_mobile": 14,
-            "position_left_desktop_large": 50,
+            "position_left_desktop_large": 84,
             "position_left_desktop": 84,
             "position_left_mobile": 65
           }
@@ -62,10 +62,10 @@
           "type": "block",
           "settings": {
             "product": "chequered-red-shirt",
-            "position_top_desktop_large": 50,
+            "position_top_desktop_large": 21,
             "position_top_desktop": 21,
             "position_top_mobile": 14,
-            "position_left_desktop_large": 50,
+            "position_left_desktop_large": 63,
             "position_left_desktop": 62,
             "position_left_mobile": 65
           }
@@ -74,10 +74,10 @@
           "type": "block",
           "settings": {
             "product": "classic-leather-jacket",
-            "position_top_desktop_large": 50,
+            "position_top_desktop_large": 18,
             "position_top_desktop": 18,
             "position_top_mobile": 14,
-            "position_left_desktop_large": 50,
+            "position_left_desktop_large": 72,
             "position_left_desktop": 72,
             "position_left_mobile": 65
           }
@@ -86,10 +86,10 @@
           "type": "block",
           "settings": {
             "product": "classic-varsity-top",
-            "position_top_desktop_large": 50,
+            "position_top_desktop_large": 26,
             "position_top_desktop": 26,
             "position_top_mobile": 14,
-            "position_left_desktop_large": 50,
+            "position_left_desktop_large": 51,
             "position_left_desktop": 51,
             "position_left_mobile": 65
           }
@@ -98,10 +98,10 @@
           "type": "block",
           "settings": {
             "product": "dark-denim-top",
-            "position_top_desktop_large": 50,
+            "position_top_desktop_large": 61,
             "position_top_desktop": 40,
             "position_top_mobile": 14,
-            "position_left_desktop_large": 50,
+            "position_left_desktop_large": 44,
             "position_left_desktop": 76,
             "position_left_mobile": 65
           }
