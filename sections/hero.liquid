@@ -13,6 +13,10 @@
       if section.settings.image_mobile
         assign image_class = 'small-hide'
       endif
+
+      if section.settings.image_desktop
+        assign large_image_class = 'small-hide medium-hide xlarge-hide'
+      endif
     -%}
     
     {%- if section.settings.image_desktop_large -%}
