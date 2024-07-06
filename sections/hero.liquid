@@ -10,14 +10,16 @@
         assign fetch_priority = 'high'
       endif
 
-      if section.settings.image_mobile
-        assign image_class = 'small-hide'
-      endif
-
       if section.settings.image_desktop
         assign large_image_class = 'small-hide medium-hide large-hide'
       elsif section.settings.image_mobile
         assign large_image_class = 'small-hide'
+      endif
+
+      if section.settings.image_desktop_large
+        assign image_class = 'xlarge-up-hide'
+      elsif section.settings.image_mobile
+        assign image_class = 'small-hide'
       endif
     -%}
     
