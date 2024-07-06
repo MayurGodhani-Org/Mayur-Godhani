@@ -16,18 +16,20 @@
 
       if section.settings.image_desktop
         assign large_image_class = 'small-hide medium-hide large-hide'
+      elsif section.settings.image_mobile
+        assign large_image_class = 'small-hide'
       endif
     -%}
     
-    {%- if section.settings.image_desktop_large -%}
-      {{
-        section.settings.image_desktop_large
-        | image_url: width: 3840
-        | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority, class: large_image_class
-      }}
-    {%- endif -%}
+    {%- if section.settings.image_desktop_large or section.settings.image_desktop -%}
+      {%- if section.settings.image_desktop_large -%}
+        {{
+          section.settings.image_desktop_large
+          | image_url: width: 3840
+          | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority, class: large_image_class
+        }}
+      {%- endif -%}
     
-    {%- if section.settings.image_desktop -%}
       {{
         section.settings.image_desktop
         | image_url: width: 2560
