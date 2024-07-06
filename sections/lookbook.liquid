@@ -51,8 +51,8 @@
 
           @media screen and (min-width: 1920px) {
             .lookbook-item-{{ block.id }} {
-              --spacing-top: {{ block.settings.position_top_desktop }}%;
-              --spacing-left: {{ block.settings.position_left_desktop }}%
+              --spacing-top: {{ block.settings.position_top_desktop_large }}%;
+              --spacing-left: {{ block.settings.position_left_desktop_large }}%
             }
           }
         {%- endstyle -%}
@@ -117,6 +117,16 @@
     },
     {
       "type": "range",
+      "id": "top_padding_desktop_large",
+      "label": "Desktop",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
       "id": "top_padding_desktop",
       "label": "Desktop",
       "min": 0,
@@ -148,6 +158,16 @@
     {
       "type": "header",
       "content": "Section padding bottom"
+    },
+    {
+      "type": "range",
+      "id": "bottom_padding_desktop_large",
+      "label": "Desktop large",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 60
     },
     {
       "type": "range",
