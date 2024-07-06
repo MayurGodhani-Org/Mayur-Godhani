@@ -55,8 +55,11 @@ class QuickVariantSelects extends HTMLElement {
     this.addEventListener('change', (event) => {
       const variant = this.getCurrentVariant();
 
-      this.updateButton(variant);
-      this.updatePrice(variant);
+      if (variant) {
+        this.updateButton(variant);
+        this.updatePrice(variant);
+      }
+      
       this.hideError(event);
     });
 
@@ -92,7 +95,7 @@ class QuickVariantSelects extends HTMLElement {
 
   updatePrice(variant) {
     const price = document.getElementById(`Price-${this.dataset.section}`);
-    if (!variant && !price) return;
+    if (!price) return;
     
     price.innerHTML = `<span>${Shopify.formatMoney(variant.price, Shopify.money_format)}</span>
                        ${(variant.compare_at_price > variant.price) ? `<s>${Shopify.formatMoney(variant.compare_at_price, Shopify.money_format)}</s>` : ''}`;
@@ -100,8 +103,7 @@ class QuickVariantSelects extends HTMLElement {
 
   updateButton(variant) {
     const button = document.getElementById(`QuickAdd-${this.dataset.section}`);
-    console.log(!variant, !button);
-    if (!variant && !button) return;
+    if (!button) return;
 
     button.disabled = !variant.available;
     button.querySelector('.text').textContent = variant.available ? window.variantStrings.addToCart : window.variantStrings.soldOut;
