@@ -100,7 +100,7 @@ class QuickVariantSelects extends HTMLElement {
 
   updateButton(variant) {
     const button = document.getElementById(`QuickAdd-${this.dataset.section}`);
-    if (!variant || !button) return;
+    if (!variant && !button) return;
 
     if (variant.available) {
       button.removeAttribute('disabled');
