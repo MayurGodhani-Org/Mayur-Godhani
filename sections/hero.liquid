@@ -33,12 +33,14 @@
           | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority, class: large_image_class
         }}
       {%- endif -%}
-    
-      {{
-        section.settings.image_desktop
-        | image_url: width: 2560
-        | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority, class: image_class
-      }}
+
+      {%- if section.settings.image_desktop -%}
+        {{
+          section.settings.image_desktop
+          | image_url: width: 2560
+          | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority, class: image_class
+        }}
+      {%- endif -%}
 
       {%- if section.settings.image_mobile -%}
         {{
