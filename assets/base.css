@@ -434,6 +434,18 @@ table:not([class]) th {
   }
 }
 
+@media screen and (min-width: 990px) and (max-width: 1919px) {
+  .xlarge-hide {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .xlarge-up-hide {
+    display: none !important;
+  }
+}
+
 .left {
   text-align: left;
 }
