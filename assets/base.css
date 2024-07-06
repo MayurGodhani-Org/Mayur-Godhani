@@ -3259,6 +3259,7 @@ details[open] .modal-overlay::after {
   .promotional-text {
     --page-width: 100%;
     font-size: 1.11119792vw;
+    line-height: 0.843684087;
     padding: 0.69453125vw 0;
   }
 }
