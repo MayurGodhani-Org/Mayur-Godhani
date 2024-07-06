@@ -92,8 +92,10 @@ class QuickVariantSelects extends HTMLElement {
 
   updatePrice(variant) {
     const price = document.getElementById(`Price-${this.dataset.section}`);
-    if (variant && price) price.innerHTML = `<span>${Shopify.formatMoney(variant.price, Shopify.money_format)}</span>
-                                             ${(variant.compare_at_price > variant.price) ? `<s>${Shopify.formatMoney(variant.compare_at_price, Shopify.money_format)}</s>` : ''}`;
+    if (!variant && !price) return;
+    
+    price.innerHTML = `<span>${Shopify.formatMoney(variant.price, Shopify.money_format)}</span>
+                       ${(variant.compare_at_price > variant.price) ? `<s>${Shopify.formatMoney(variant.compare_at_price, Shopify.money_format)}</s>` : ''}`;
   }
 
   updateButton(variant) {
