@@ -113,7 +113,7 @@ class QuickVariantSelects extends HTMLElement {
     const options = this.querySelectorAll('.quick-view__product-option');
     options.forEach((option) => {
       const inputChecked = option.querySelector('input:checked');
-      if (!inputChecked) return;
+      if (inputChecked) return;
 
       const error = option.querySelector('.quick-view__option-error');
       if (error) error.classList.remove('hidden');
