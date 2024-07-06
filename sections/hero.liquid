@@ -16,7 +16,9 @@
         assign large_image_class = 'small-hide'
       endif
 
-      if section.settings.image_desktop_large
+      if section.settings.image_desktop_large and section.settings.image_mobile
+        assign image_class = 'small-hide xlarge-up-hide'
+      elsif section.settings.image_desktop_large
         assign image_class = 'xlarge-up-hide'
       elsif section.settings.image_mobile
         assign image_class = 'small-hide'
