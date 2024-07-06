@@ -435,7 +435,7 @@ table:not([class]) th {
 }
 
 @media screen and (min-width: 990px) and (max-width: 1919px) {
-  .xlarge-hide {
+  .large-hide {
     display: none !important;
   }
 }
