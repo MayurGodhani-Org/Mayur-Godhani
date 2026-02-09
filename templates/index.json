@@ -1,25 +1,22 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_6j4wth": {
       "type": "hero",
       "settings": {
-        "image_desktop_large": "shopify:\/\/shop_images\/hero-placeholder-large.svg",
-        "image_desktop": "shopify:\/\/shop_images\/hero-placeholder.svg",
-        "image_mobile": "shopify:\/\/shop_images\/hero-placeholder-mobile.svg",
         "heading": "The Gift Guide",
-        "text": "<p>Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.<\/p>",
-        "text_mobile": "<p>Discover Joy: Your Ultimate Holiday Gift Destination.<\/p>",
+        "text": "<p>Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.</p>",
+        "text_mobile": "<p>Discover Joy: Your Ultimate Holiday Gift Destination.</p>",
         "button_label": "Shop now",
-        "button_link": "shopify:\/\/collections\/all",
+        "button_link": "shopify://collections/all",
         "color_scheme": ""
       }
     },
@@ -37,7 +34,8 @@
         "block_zdLTnY": {
           "type": "block",
           "settings": {
-            "product": "black-leather-bag",
+            "image": "shopify://shop_images/BLS-099_OspreyDaylite_Black.jpg",
+            "product": "nike-brasilia-drawstring-pack-product-sanmar",
             "position_top_desktop_large": 61,
             "position_top_desktop": 57,
             "position_top_mobile": 14,
