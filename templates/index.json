@@ -47,7 +47,8 @@
         "block_rbTVE8": {
           "type": "block",
           "settings": {
-            "product": "blue-silk-tuxedo",
+            "image": "shopify://shop_images/Aviation_Tee_Curved_Hem_White.png",
+            "product": "district®-re-tee®",
             "position_top_desktop_large": 53,
             "position_top_desktop": 53,
             "position_top_mobile": 14,
@@ -59,7 +60,8 @@
         "block_69dKYM": {
           "type": "block",
           "settings": {
-            "product": "chequered-red-shirt",
+            "image": "shopify://shop_images/pufferblanket_smokymountain.webp",
+            "product": "eco-freek-beverage-sleeve-hpg-brands",
             "position_top_desktop_large": 21,
             "position_top_desktop": 21,
             "position_top_mobile": 14,
