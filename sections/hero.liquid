@@ -1,0 +1,148 @@
+{{ 'section-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="hero color-{{ section.settings.color_scheme }}">
+  <div class="hero-image media media--transparent">
+    {%- liquid
+      assign sizes = '100vw'
+      assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 2560, 3840'
+      assign fetch_priority = 'auto'
+      if section.index == 1
+        assign fetch_priority = 'high'
+      endif
+
+      if section.settings.image_desktop
+        assign large_image_class = 'small-hide medium-hide large-hide'
+      elsif section.settings.image_mobile
+        assign large_image_class = 'small-hide'
+      endif
+
+      if section.settings.image_desktop_large and section.settings.image_mobile
+        assign image_class = 'small-hide xlarge-up-hide'
+      elsif section.settings.image_desktop_large
+        assign image_class = 'xlarge-up-hide'
+      elsif section.settings.image_mobile
+        assign image_class = 'small-hide'
+      endif
+    -%}
+    
+    {%- if section.settings.image_desktop_large or section.settings.image_desktop -%}
+      {%- if section.settings.image_desktop_large -%}
+        {{
+          section.settings.image_desktop_large
+          | image_url: width: 3840
+          | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority, class: large_image_class
+        }}
+      {%- endif -%}
+
+      {%- if section.settings.image_desktop -%}
+        {{
+          section.settings.image_desktop
+          | image_url: width: 2560
+          | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority, class: image_class
+        }}
+      {%- endif -%}
+
+      {%- if section.settings.image_mobile -%}
+        {{
+          section.settings.image_mobile
+          | image_url: width: 2560
+          | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority, class: 'medium-hide large-up-hide'
+        }}
+      {%- endif -%}
+    {%- else -%}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder' }}
+    {%- endif -%}
+  </div>
+  <div class="hero-text page-width">
+    <div class="hero-text__container">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="hero-title">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <div class="hero-content rte{% if section.settings.text_mobile != blank %} small-hide{% endif %}">
+          {{ section.settings.text }}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.text_mobile != blank -%}
+        <div class="hero-content rte medium-hide large-up-hide">
+          {{ section.settings.text_mobile }}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.button_label != blank -%}
+        <div class="hero-buttons">
+          <a href="{{ section.settings.button_link }}" class="hero-button button button--with-arrow">
+            <span class="text">{{ section.settings.button_label }}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="13" viewBox="0 0 28 13" fill="none" class="icon">
+              <path d="M1.11108 5.74402L0.361084 5.74402L0.361084 7.24402L1.11108 7.24402L1.11108 5.74402ZM27.1487 7.02435C27.4416 6.73146 27.4416 6.25658 27.1487 5.96369L22.3757 1.19072C22.0828 0.897826 21.6079 0.897826 21.315 1.19072C21.0221 1.48361 21.0221 1.95849 21.315 2.25138L25.5577 6.49402L21.315 10.7367C21.0221 11.0296 21.0221 11.5044 21.315 11.7973C21.6079 12.0902 22.0828 12.0902 22.3757 11.7973L27.1487 7.02435ZM1.11108 7.24402L26.6183 7.24402L26.6183 5.74402L1.11108 5.74402L1.11108 7.24402Z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_desktop_large",
+      "label": "Desktop large image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_desktop",
+      "label": "Desktop image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile image"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Gift Guide"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "text_mobile",
+      "label": "Mobile text",
+      "default": "<p>Discover Joy: Your Ultimate Holiday Gift Destination.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Shop now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero"
+    }
+  ]
+}
+{% endschema %}
